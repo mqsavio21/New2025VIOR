@@ -95,7 +95,7 @@
             <div class="container mx-auto px-4 h-full flex items-center relative z-20">
                 <div class="max-w-2xl">
                     <h1 class="text-4xl md:text-6xl font-bold mb-4 text-[#FEE66C] font-['Orbitron']">MEET OUR TEAMS</h1>
-                    <p class="text-[#69B3E3] text-lg md:text-xl">Home to world-class talent competing in various games and entertainment.</p>
+                    <p class="text-[#69B3E3] text-lg md:text-xl">from rising stars to seasoned veterans vtubers, showcasing their competitive spirit and gaming prowess.</p>
                 </div>
             </div>
         </div>
@@ -105,11 +105,11 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- VIOR Vernalis -->
                 <div class="group relative aspect-square bg-[#162F5A] overflow-hidden cursor-pointer">
-                    <img src="/images/vernalis-banner.jpg" alt="VIOR Vernalis" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    <img src="/images/vernalis.png" alt="VIOR Vernalis" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-[#0F2A55] via-[#0F2A55]/50 to-transparent opacity-90"></div>
                     <div class="absolute bottom-0 left-0 right-0 p-6">
-                        <h3 class="text-2xl font-bold text-[#FCFEFD] mb-2">VIOR Vernalis</h3>
-                        <p class="text-[#69B3E3]">Main Competitive Team</p>
+                        <h3 class="text-2xl font-bold text-[#FCFEFD] mb-2 font-['Orbitron']">VIOR Vernalis</h3>
+                        <p class="text-[#FEE66C]">The Most Elite Team in VIOR</p>
                     </div>
                 </div>
 
@@ -118,18 +118,38 @@
                     <img src="{{ asset('images/eclipse.png') }}" alt="VIOR Eclipse" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-[#0F2A55] via-[#0F2A55]/50 to-transparent opacity-90"></div>
                     <div class="absolute bottom-0 left-0 right-0 p-6">
-                        <h3 class="text-2xl font-bold text-[#FCFEFD] mb-2">VIOR Eclipse</h3>
-                        <p class="text-[#69B3E3]">Academy Team</p>
+                        <h3 class="text-2xl font-bold text-[#FCFEFD] mb-2 font-['Orbitron']">VIOR Eclipse</h3>
+                        <p class="text-[#FEE66C]">Strategic and Tactical</p>
                     </div>
                 </div>
 
                 <!-- VIOR Ignite -->
                 <div class="group relative aspect-square bg-[#162F5A] overflow-hidden cursor-pointer">
-                    <img src="/images/ignite-banner.jpg" alt="VIOR Ignite" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    <img src="/images/news2.png" alt="VIOR Ignite" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-[#0F2A55] via-[#0F2A55]/50 to-transparent opacity-90"></div>
                     <div class="absolute bottom-0 left-0 right-0 p-6">
-                        <h3 class="text-2xl font-bold text-[#FCFEFD] mb-2">VIOR Ignite</h3>
-                        <p class="text-[#69B3E3]">Development Team</p>
+                        <h3 class="text-2xl font-bold text-[#FCFEFD] mb-2 font-['Orbitron']">VIOR Ignite</h3>
+                        <p class="text-[#FEE66C]">Fiery Passion and Unyielding Spirit</p>
+                    </div>
+                </div>
+
+                <!-- VIOR Aphrodite -->
+                <div class="group relative aspect-square bg-[#162F5A] overflow-hidden cursor-pointer">
+                    <img src="/images/aphrodite.png" alt="VIOR Ignite" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0F2A55] via-[#0F2A55]/50 to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6">
+                        <h3 class="text-2xl font-bold text-[#FCFEFD] mb-2 font-['Orbitron']">VIOR Aphrodite</h3>
+                        <p class="text-[#FEE66C]">Stunning and Elegant</p>
+                    </div>
+                </div>
+
+                <!-- VIOR Reverie -->
+                <div class="group relative aspect-square bg-[#162F5A] overflow-hidden cursor-pointer">
+                    <img src="/images/reverie.png" alt="VIOR Ignite" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0F2A55] via-[#0F2A55]/50 to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6">
+                        <h3 class="text-2xl font-bold text-[#FCFEFD] mb-2 font-['Orbitron']">VIOR Reverie</h3>
+                        <p class="text-[#FEE66C]">Turning Daydreams into Reality</p>
                     </div>
                 </div>
             </div>
