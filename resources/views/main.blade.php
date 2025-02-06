@@ -23,7 +23,7 @@
                 </div>
                 <div class="hidden md:flex space-x-8">
                     <a href="#" class="text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-medium font-['Rajdhani']">HOME</a>
-                    <a href="#" class="text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-medium font-['Rajdhani']">TEAMS</a>
+                    <a href="/teams" class="text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-medium font-['Rajdhani']">TEAMS</a>
                     <a href="#" class="text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-medium font-['Rajdhani']">ABOUT</a>
                     <a href="#" class="text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-medium font-['Rajdhani']">ACADEMY</a>
                     <a href="https://www.oristarium.com/" class="text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-medium font-['Rajdhani']">ENTERTAINMENT</a>
@@ -54,7 +54,7 @@
             <!-- Navigation Links -->
             <nav class="space-y-6">
                 <a href="#" class="block text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-['Rajdhani']">HOME</a>
-                <a href="#" class="block text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-['Rajdhani']">TEAMS</a>
+                <a href="/teams" class="block text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-['Rajdhani']">TEAMS</a>
                 <a href="#" class="block text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-['Rajdhani']">ABOUT</a>
                 <a href="#" class="block text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-['Rajdhani']">ACADEMY</a>
                 <a href="https://www.oristarium.com/" class="block text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-['Rajdhani']">ENTERTAINMENT</a>
@@ -427,7 +427,7 @@
                         <h3 class="text-xl font-bold mb-4 text-[#FEE66C]">QUICK LINKS</h3>
                         <ul class="space-y-2">
                             <li><a href="#" class="text-[#CBCBCB] hover:text-[#FFAB3D]">Home</a></li>
-                            <li><a href="#" class="text-[#CBCBCB] hover:text-[#FFAB3D]">Teams</a></li>
+                            <li><a href="/teams" class="text-[#CBCBCB] hover:text-[#FFAB3D]">Teams</a></li>
                             <li><a href="#" class="text-[#CBCBCB] hover:text-[#FFAB3D]">About</a></li>
                             <li><a href="#" class="text-[#CBCBCB] hover:text-[#FFAB3D]">Academy</a></li>
                             <li><a href="https://www.oristarium.com/" class="text-[#CBCBCB] hover:text-[#FFAB3D]">Entertainment</a></li>
