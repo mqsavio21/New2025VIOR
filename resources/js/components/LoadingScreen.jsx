@@ -4,56 +4,63 @@ import AnimatedGradientBackground from './AnimatedGradientBackground';
 
 const LoadingScreen = () => {
   useEffect(() => {
-    // Hide main content initially
+    // Hide main content immediately
     const mainContent = document.getElementById('page-content');
     if (mainContent) {
       mainContent.style.opacity = '0';
       mainContent.style.visibility = 'hidden';
     }
 
-    // Set a timeout to remove the loading screen after 2 seconds
+    // Add a small delay before starting the fade-out process
     const timer = setTimeout(() => {
       const loadingScreen = document.getElementById('loading-screen-root');
       if (loadingScreen) {
+        // Start fade out
         loadingScreen.style.opacity = '0';
+        
+        // After fade out, hide loading screen and show content
         setTimeout(() => {
           loadingScreen.style.display = 'none';
           document.body.classList.remove('loading');
+          
           // Show main content with fade in effect
           if (mainContent) {
             mainContent.style.visibility = 'visible';
-            mainContent.style.opacity = '1';
-            // Enable scrolling
-            document.body.style.overflow = '';
+            requestAnimationFrame(() => {
+              mainContent.style.opacity = '1';
+              // Enable scrolling
+              document.body.style.overflow = '';
+            });
           }
-        }, 500); // Fade out transition
+        }, 500); // Fade out transition duration
       }
-    }, 2000); // 2 seconds
+    }, 1500); // Reduced from 2000ms to 1500ms for better UX
 
     return () => clearTimeout(timer);
   }, []);
 
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center bg-[#0F2A55] transition-opacity duration-500">
+    <div 
+      className="fixed inset-0 z-[100] flex items-center justify-center bg-[#0F2A55] transition-opacity duration-500" 
+      style={{ transform: 'translateZ(0)' }}
+    >
       <AnimatedGradientBackground />
-      <div className="relative z-10 flex flex-col items-center">
+      <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center z-10">
         <div className="relative">
           <img 
             src="/images/logo.png" 
             alt="VIOR Logo" 
-            className="w-16 h-16 object-contain" // Reduced from w-24 h-24 to w-16 h-16
+            className="w-16 h-16 object-contain"
           />
           <motion.div
-            className="absolute top-0 left-0 w-full h-full"
+            className="absolute top-0 left-0"
             style={{
               border: '2px solid #FEE66C',
               borderRadius: '50%',
               borderRightColor: 'transparent',
               borderBottomColor: 'transparent',
-              width: '64px',  // Added explicit width (matches w-16)
-              height: '64px', // Added explicit height (matches h-16)
-              top: '0',
-              left: '0'
+              width: '64px',
+              height: '64px',
             }}
             animate={{ rotate: 360 }}
             transition={{
