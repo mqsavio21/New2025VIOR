@@ -127,7 +127,18 @@ body.menu-open #mobile-menu {
 }
 
 body.menu-open #page-content {
-    transform: translateX(320px); /* Slightly wider than the menu to show shadow */
+    transform: translateX(320px);
+}
+
+/* Hide mobile menu completely at md breakpoint */
+@media (min-width: 768px) {
+    body.menu-open #page-content {
+        transform: none;
+    }
+    
+    #mobile-menu {
+        display: none;
+    }
 }
 
 /* Menu animation */

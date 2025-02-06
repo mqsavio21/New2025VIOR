@@ -407,6 +407,10 @@
             body.classList.toggle('menu-open');
         }
 
+        function closeMobileMenu() {
+            body.classList.remove('menu-open');
+        }
+
         mobileMenuButton.addEventListener('click', toggleMobileMenu);
         mobileMenuClose.addEventListener('click', toggleMobileMenu);
 
@@ -416,6 +420,13 @@
                 !mobileMenu.contains(event.target) && 
                 !mobileMenuButton.contains(event.target)) {
                 toggleMobileMenu();
+            }
+        });
+
+        // Add resize event listener
+        window.addEventListener('resize', function() {
+            if (window.innerWidth >= 768) { // 768px is Tailwind's md breakpoint
+                closeMobileMenu();
             }
         });
     </script>
