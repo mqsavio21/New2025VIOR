@@ -8,6 +8,8 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <!-- Add Orbitron font import -->
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Add Rajdhani font import -->
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body class="bg-[#0F2A55] text-[#FCFEFD]">
     <!-- Navigation -->
@@ -18,12 +20,12 @@
                     <img src="{{ asset('images/logo.png') }}" alt="Logo" class="h-12 md:h-20">
                 </div>
                 <div class="hidden md:flex space-x-8">
-                    <a href="#" class="text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-medium">HOME</a>
-                    <a href="#" class="text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-medium">TEAMS</a>
-                    <a href="#" class="text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-medium">ABOUT</a>
-                    <a href="#" class="text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-medium">ACADEMY</a>
-                    <a href="https://www.oristarium.com/" class="text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-medium">ENTERTAINMENT</a>
-                    <a href="#" class="text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-medium">STAFF</a>
+                    <a href="#" class="text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-medium font-['Rajdhani']">HOME</a>
+                    <a href="#" class="text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-medium font-['Rajdhani']">TEAMS</a>
+                    <a href="#" class="text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-medium font-['Rajdhani']">ABOUT</a>
+                    <a href="#" class="text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-medium font-['Rajdhani']">ACADEMY</a>
+                    <a href="https://www.oristarium.com/" class="text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-medium font-['Rajdhani']">ENTERTAINMENT</a>
+                    <a href="#" class="text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-medium font-['Rajdhani']">STAFF</a>
                 </div>
                 <!-- Mobile menu button -->
                 <button id="mobile-menu-button" class="md:hidden text-[#FCFEFD] hover:text-[#FFAB3D] focus:outline-none">
@@ -49,12 +51,12 @@
             
             <!-- Navigation Links -->
             <nav class="space-y-6">
-                <a href="#" class="block text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors">HOME</a>
-                <a href="#" class="block text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors">TEAMS</a>
-                <a href="#" class="block text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors">ABOUT</a>
-                <a href="#" class="block text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors">ACADEMY</a>
-                <a href="https://www.oristarium.com/" class="block text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors">ENTERTAINMENT</a>
-                <a href="#" class="block text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors">STAFF</a>
+                <a href="#" class="block text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-['Rajdhani']">HOME</a>
+                <a href="#" class="block text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-['Rajdhani']">TEAMS</a>
+                <a href="#" class="block text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-['Rajdhani']">ABOUT</a>
+                <a href="#" class="block text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-['Rajdhani']">ACADEMY</a>
+                <a href="https://www.oristarium.com/" class="block text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-['Rajdhani']">ENTERTAINMENT</a>
+                <a href="#" class="block text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-['Rajdhani']">STAFF</a>
                 
                 <!-- Social Media Links -->
                 <div class="flex space-x-4 pt-4 border-t border-[#69B3E3]/20">
