@@ -25,3 +25,126 @@ body {
 html {
     scroll-behavior: smooth;
 }
+
+/* Add these styles to your existing CSS */
+.relative.overflow-hidden {
+    position: relative;
+    isolation: isolate;
+}
+
+#main-animated-bg-root {
+    pointer-events: none;
+    position: absolute;
+    overflow: hidden;
+}
+
+/* Add this to ensure content appears above the background */
+.relative .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Add specific background colors for other sections */
+.hero-section {
+    background-color: #0F2A55;
+}
+
+.latest-news-section {
+    background-color: #0F2A55;
+}
+
+/* Add these responsive utilities */
+@layer utilities {
+    .container {
+        @apply px-4 mx-auto;
+        max-width: 100%;
+    }
+
+    @screen sm {
+        .container {
+            max-width: 640px;
+        }
+    }
+
+    @screen md {
+        .container {
+            max-width: 768px;
+        }
+    }
+
+    @screen lg {
+        .container {
+            max-width: 1024px;
+        }
+    }
+
+    @screen xl {
+        .container {
+            max-width: 1280px;
+        }
+    }
+}
+
+/* Add responsive grid layouts */
+.grid {
+    @apply grid-cols-1;
+}
+
+@screen md {
+    .grid {
+        @apply grid-cols-2;
+    }
+}
+
+@screen lg {
+    .grid {
+        @apply grid-cols-3;
+    }
+}
+
+/* Add responsive spacing */
+.section-padding {
+    @apply py-12 md:py-16 lg:py-20;
+}
+
+/* Improve text readability on mobile */
+.text-responsive {
+    @apply text-base md:text-lg lg:text-xl;
+}
+
+/* Mobile menu styles */
+body.menu-open {
+    overflow: hidden;
+}
+
+#mobile-menu {
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* When menu is open */
+body.menu-open #mobile-menu {
+    transform: translateX(0);
+}
+
+body.menu-open #page-content {
+    transform: translateX(320px); /* Slightly wider than the menu to show shadow */
+}
+
+/* Menu animation */
+.menu-enter {
+    transform: translateY(100%);
+}
+
+.menu-enter-active {
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-exit {
+    transform: translateY(0);
+}
+
+.menu-exit-active {
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+}
