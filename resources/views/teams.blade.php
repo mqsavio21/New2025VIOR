@@ -41,7 +41,7 @@
         </nav>
 
         <!-- Mobile Menu (Side Drawer) -->
-        <div id="mobile-menu" class="fixed top-0 left-0 w-80 h-full bg-[#0F2A55] transform -translate-x-full transition-transform duration-300 ease-in-out z-50 border-r border-[#69B3E3]/20">
+        <div id="mobile-menu" class="fixed top-0 left-0 w-80 h-full bg-[#0F2A55] transform transition-transform duration-300 ease-in-out z-50 border-r border-[#69B3E3]/20">
             <div class="h-full flex flex-col p-6">
                 <!-- Close button -->
                 <div class="flex justify-end mb-8">
@@ -53,15 +53,17 @@
                 </div>
                 
                 <!-- Navigation Links -->
-                <nav class="space-y-6">
-                    <a href="/#" class="block text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-['Rajdhani']">HOME</a>
-                    <a href="/teams" class="block text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-['Rajdhani']">TEAMS</a>
-                    <a href="#" class="block text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-['Rajdhani']">ABOUT</a>
-                    <a href="#" class="block text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-['Rajdhani']">ACADEMY</a>
-                    <a href="https://www.oristarium.com/" class="block text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-['Rajdhani']">ENTERTAINMENT</a>
-                    <a href="#" class="block text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-['Rajdhani']">STAFF</a>
-                    
-                    <!-- Social Media Links -->
+                <nav class="flex flex-col space-y-6">
+                    <a href="/" class="text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-['Rajdhani']">HOME</a>
+                    <a href="/teams" class="text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-['Rajdhani']">TEAMS</a>
+                    <a href="#" class="text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-['Rajdhani']">ABOUT</a>
+                    <a href="#" class="text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-['Rajdhani']">ACADEMY</a>
+                    <a href="https://www.oristarium.com/" class="text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-['Rajdhani']">ENTERTAINMENT</a>
+                    <a href="#" class="text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-['Rajdhani']">STAFF</a>
+                </nav>
+
+                <!-- Social Media Links -->
+                <div class="mt-auto">
                     <div class="flex space-x-4 pt-4 border-t border-[#69B3E3]/20">
                         <!-- Twitter/X -->
                         <a href="https://x.com/ViOrTower" target="_blank" rel="noopener noreferrer" class="text-[#FCFEFD] hover:text-[#FFAB3D]">
@@ -88,7 +90,7 @@
                             </svg>
                         </a>
                     </div>
-                </nav>
+                </div>
             </div>
         </div>
 
