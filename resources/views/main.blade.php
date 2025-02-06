@@ -15,7 +15,7 @@
 </head>
 <body class="bg-[#0F2A55] text-[#FCFEFD]">
     <!-- Navigation -->
-    <nav class="fixed w-full z-50 bg-[#0F2A55]/90 backdrop-blur-sm border-b border-[#69B3E3]/20">
+    <nav class="fixed w-full z-50 bg-[#0F2A55]/90 backdrop-blur-sm border-b border-[#FEE66C]/40">
         <div class="container mx-auto px-4 py-4">
             <div class="flex justify-between items-center">
                 <div class="text-3xl font-bold">
