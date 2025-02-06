@@ -19,6 +19,7 @@
 /* Custom styles */
 body {
     font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
 }
 
 /* Smooth scrolling */
@@ -158,4 +159,55 @@ body.menu-open #page-content {
 .menu-exit-active {
     transform: translateY(100%);
     transition: transform 0.3s ease-in-out;
+}
+
+/* Update these loading styles */
+body.loading {
+    overflow: hidden;
+}
+
+#page-content {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+    height: 100%;
+    overflow-y: auto;
+}
+
+#loading-screen-root {
+    transition: opacity 0.5s ease-out;
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+}
+
+#loading-screen-root:empty {
+    display: none;
+}
+
+/* Add fade-in animation */
+.fade-in {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Add or update these styles */
+.shared-sections-wrapper {
+    position: relative;
+    background-color: #0F2A55;
+    overflow: hidden;
+}
+
+#shared-animated-bg-root {
+    pointer-events: none;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.shared-sections-content {
+    position: relative;
+    z-index: 2;
 }
