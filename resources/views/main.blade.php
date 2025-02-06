@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Add favicon -->
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon/favicon.ico') }}">
     <title>VIOR Tower</title>
     @viteReactRefresh
     @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -169,7 +171,7 @@
 
             <!-- Add this more prominent divider -->
             <div class="w-full h-[3px] bg-gradient-to-r from-transparent via-[#FEE66C] to-transparent opacity-60 relative z-10"></div>
-            <!-- Recent Videos and Discord Communities sections should be wrapped together -->
+            <!-- Recent Videos and Discord communities sections should be wrapped together -->
             <div class="relative bg-[#0F2A55]">
                 <!-- Single animated background root -->
                 <div id="main-animated-bg-root" class="absolute inset-0 w-full pointer-events-none" style="z-index: 1;"></div>
