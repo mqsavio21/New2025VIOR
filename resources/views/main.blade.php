@@ -115,7 +115,7 @@
                             Elevate Talents, Empower Skills
                         </p>
                         <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
-                            <a href="#" class="bg-[#FFAB3D] hover:bg-[#FEE66C] text-[#0F2A55] px-8 py-3 rounded-none transition-colors font-bold shadow-lg hover:shadow-xl border-2 border-[#FFAB3D]">
+                            <a href="https://forms.gle/QAsCu6zv88PkWbnj6" class="bg-[#FFAB3D] hover:bg-[#FEE66C] text-[#0F2A55] px-8 py-3 rounded-none transition-colors font-bold shadow-lg hover:shadow-xl border-2 border-[#FFAB3D]">
                                 JOIN US
                             </a>
                             <a href="#" class="border-2 border-[#69B3E3] hover:bg-[#69B3E3] hover:text-[#0F2A55] text-[#69B3E3] px-8 py-3 rounded-none transition-colors shadow-lg hover:shadow-xl">
@@ -171,7 +171,7 @@
 
             <!-- Add this more prominent divider -->
             <div class="w-full h-[3px] bg-gradient-to-r from-transparent via-[#FEE66C] to-transparent opacity-60 relative z-10"></div>
-            <!-- Recent Videos and Discord communities sections should be wrapped together -->
+            <!-- Recent Videos and Discord communities and Founders sections should be wrapped together -->
             <div class="relative bg-[#0F2A55]">
                 <!-- Single animated background root -->
                 <div id="main-animated-bg-root" class="absolute inset-0 w-full pointer-events-none" style="z-index: 1;"></div>
@@ -342,6 +342,73 @@
                                     frameborder="0" 
                                     sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
                                 </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add this more prominent divider -->
+                <div class="w-full h-[3px] bg-gradient-to-r from-transparent via-[#FEE66C] to-transparent opacity-60 relative z-10"></div>
+
+                <!-- Founders Section -->
+                <div class="relative">
+                    <div class="container mx-auto px-4 py-24 relative z-10">
+                        <div class="text-center mb-16">
+                            <h2 class="text-4xl font-bold text-[#FEE66C] mb-4 font-['Rajdhani']">The Founders of VIOR</h2>
+                            <p class="text-[#69B3E3] text-lg max-w-2xl mx-auto">Meet the brilliant minds behind VIOR Tower, pioneering the future of VTuber esports and entertainment</p>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                            <!-- Founder 1 -->
+                            <div class="text-center">
+                                <div class="mb-6 relative group">
+                                    <div class="relative w-56 h-56 md:w-64 md:h-64 mx-auto overflow-hidden rounded-full">
+                                        <img src="/images/haru.png" alt="Founder" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300">
+                                        <div class="absolute inset-0 bg-[#FEE66C]/10 group-hover:bg-transparent transition-all duration-300"></div>
+                                    </div>
+                                </div>
+                                <h3 class="text-2xl font-bold text-[#FCFEFD] mb-2">Haruki "HaruMiz" Mizuhashi</h3>
+                                <p class="text-[#69B3E3] font-medium mb-2">CEO & Founder</p>
+                                <p class="text-[#CBCBCB] text-sm">Since 2023</p>
+                            </div>
+
+                            <!-- Founder 2 -->
+                            <div class="text-center">
+                                <div class="mb-6 relative group">
+                                    <div class="relative w-56 h-56 md:w-64 md:h-64 mx-auto overflow-hidden rounded-full">
+                                        <img src="/images/ovio.png" alt="Founder" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300">
+                                        <div class="absolute inset-0 bg-[#FEE66C]/10 group-hover:bg-transparent transition-all duration-300"></div>
+                                    </div>
+                                </div>
+                                <h3 class="text-2xl font-bold text-[#FCFEFD] mb-2">Ovio "Birdy" Damion</h3>
+                                <p class="text-[#69B3E3] font-medium mb-2">Community Director & Founder</p>
+                                <p class="text-[#CBCBCB] text-sm">Since 2023</p>
+                            </div>
+
+                            <!-- Founder 3 -->
+                            <div class="text-center">
+                                <div class="mb-6 relative group">
+                                    <div class="relative w-56 h-56 md:w-64 md:h-64 mx-auto overflow-hidden rounded-full">
+                                        <img src="/images/roffi.png" alt="Founder" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300">
+                                        <div class="absolute inset-0 bg-[#FEE66C]/10 group-hover:bg-transparent transition-all duration-300"></div>
+                                    </div>
+                                </div>
+                                <h3 class="text-2xl font-bold text-[#FCFEFD] mb-2">Roffi Daijoubu</h3>
+                                <p class="text-[#69B3E3] font-medium mb-2">CTO & Founder</p>
+                                <p class="text-[#CBCBCB] text-sm">Since 2023</p>
+                            </div>
+
+                            <!-- Founder 4 -->
+                            <div class="text-center">
+                                <div class="mb-6 relative group">
+                                    <div class="relative w-56 h-56 md:w-64 md:h-64 mx-auto overflow-hidden rounded-full">
+                                        <img src="/images/bellatrix.png" alt="Founder" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300">
+                                        <div class="absolute inset-0 bg-[#FEE66C]/10 group-hover:bg-transparent transition-all duration-300"></div>
+                                    </div>
+                                </div>
+                                <h3 class="text-2xl font-bold text-[#FCFEFD] mb-2">Bellatrix Cyrus</h3>
+                                <p class="text-[#69B3E3] font-medium mb-2">Head of Entertainment</p>
+                                <p class="text-[#CBCBCB] text-sm">Since 2024</p>
                             </div>
                         </div>
                     </div>
