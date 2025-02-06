@@ -460,6 +460,16 @@
                                 </svg>
                             </a>
                         </div>
+                        <!-- Adjusted copyright position -->
+                        <div class="mt-4 text-[#CBCBCB] text-sm md:hidden">
+                            © 2025 VIOR Tower. All rights reserved.
+                        </div>
+                    </div>
+                    <!-- Desktop copyright -->
+                    <div class="hidden md:block text-right">
+                        <p class="text-[#CBCBCB] text-sm">
+                            © 2025 VIOR Tower.<br class="hidden lg:block">All rights reserved.
+                        </p>
                     </div>
                 </div>
             </div>

@@ -158,6 +158,70 @@
                     </div>
                 </div>
             </div>
+            <!-- Add this more prominent divider -->
+            <div class="w-full h-[3px] bg-gradient-to-r from-transparent via-[#FEE66C] to-transparent opacity-60 relative z-10"></div>
+            
+            <!-- Achievements Section -->
+            <div class="container mx-auto px-4 py-16">
+                <h2 class="text-4xl font-bold mb-12 text-center text-[#FEE66C] font-['Orbitron'] flex items-center justify-center gap-4">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M5 3h14l1 2v2h-2.1c.1.3.1.7.1 1 0 2.8-2.2 5-5 5h-2c-2.8 0-5-2.2-5-5 0-.3 0-.7.1-1H4V5l1-2zm13 2H6l-.3.6V6h12.6v-.4L18 5zM12 11c1.9 0 3.5-1.5 3.5-3.5 0-.3 0-.7-.1-1H8.6c-.1.3-.1.7-.1 1C8.5 9.5 10.1 11 12 11z M11 14v5h2v-5h-2z M9 21v-1h6v1H9z"/>
+                    </svg>
+                    OUR ACHIEVEMENTS
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M5 3h14l1 2v2h-2.1c.1.3.1.7.1 1 0 2.8-2.2 5-5 5h-2c-2.8 0-5-2.2-5-5 0-.3 0-.7.1-1H4V5l1-2zm13 2H6l-.3.6V6h12.6v-.4L18 5zM12 11c1.9 0 3.5-1.5 3.5-3.5 0-.3 0-.7-.1-1H8.6c-.1.3-.1.7-.1 1C8.5 9.5 10.1 11 12 11z M11 14v5h2v-5h-2z M9 21v-1h6v1H9z"/>
+                    </svg>
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Achievement 1 -->
+                    <div class="bg-[#162F5A] p-6 rounded-lg border border-[#69B3E3]/20 shadow-[0_0_15px_rgba(254,230,108,0.3)] transition-shadow hover:shadow-[0_0_20px_rgba(254,230,108,0.5)]">
+                        <h3 class="text-xl font-bold mb-2 text-[#FEE66C] font-['Orbitron']">Digikagi Virtual Championship Season 3</h3>
+                        <p class="text-[#CBCBCB]">3rd Place</p>
+                    </div>
+
+                    <!-- Achievement 2 -->
+                    <div class="bg-[#162F5A] p-6 rounded-lg border border-[#69B3E3]/20 shadow-[0_0_15px_rgba(254,230,108,0.3)] transition-shadow hover:shadow-[0_0_20px_rgba(254,230,108,0.5)]">
+                        <h3 class="text-xl font-bold mb-2 text-[#FEE66C] font-['Orbitron']">ASPIRA PRO SERIES (VALORANT EDITION)</h3>
+                        <p class="text-[#CBCBCB]">3rd Place</p>
+                    </div>
+
+                    <!-- Achievement 3 -->
+                    <div class="bg-[#162F5A] p-6 rounded-lg border border-[#69B3E3]/20 shadow-[0_0_15px_rgba(254,230,108,0.3)] transition-shadow hover:shadow-[0_0_20px_rgba(254,230,108,0.5)]">
+                        <h3 class="text-xl font-bold mb-2 text-[#FEE66C] font-['Orbitron']">Inari Shrine VALORANT Fun Match</h3>
+                        <p class="text-[#CBCBCB]">2nd Place</p>
+                    </div>
+
+                    <!-- Achievement 4 -->
+                    <div class="bg-[#162F5A] p-6 rounded-lg border border-[#69B3E3]/20 shadow-[0_0_15px_rgba(254,230,108,0.3)] transition-shadow hover:shadow-[0_0_20px_rgba(254,230,108,0.5)]">
+                        <h3 class="text-xl font-bold mb-2 text-[#FEE66C] font-['Orbitron']">SerafioZ VALORANT Fun Match</h3>
+                        <p class="text-[#CBCBCB]">2nd Place</p>
+                    </div>
+
+                    <!-- Achievement 5 -->
+                    <div class="bg-[#162F5A] p-6 rounded-lg border border-[#69B3E3]/20 shadow-[0_0_15px_rgba(254,230,108,0.3)] transition-shadow hover:shadow-[0_0_20px_rgba(254,230,108,0.5)]">
+                        <h3 class="text-xl font-bold mb-2 text-[#FEE66C] font-['Orbitron']">The Lazy Tempur Valorant Tournament</h3>
+                        <p class="text-[#CBCBCB]">Best 8 from 64</p>
+                    </div>
+
+                    <!-- Achievement 6 -->
+                    <div class="bg-[#162F5A] p-6 rounded-lg border border-[#69B3E3]/20 shadow-[0_0_15px_rgba(254,230,108,0.3)] transition-shadow hover:shadow-[0_0_20px_rgba(254,230,108,0.5)]">
+                        <h3 class="text-xl font-bold mb-2 text-[#FEE66C] font-['Orbitron']">RGVE Tournament</h3>
+                        <p class="text-[#CBCBCB]">1st Place</p>
+                    </div>
+
+                    <!-- Achievement 7 -->
+                    <div class="bg-[#162F5A] p-6 rounded-lg border border-[#69B3E3]/20 shadow-[0_0_15px_rgba(254,230,108,0.3)] transition-shadow hover:shadow-[0_0_20px_rgba(254,230,108,0.5)]">
+                        <h3 class="text-xl font-bold mb-2 text-[#FEE66C] font-['Orbitron']">VALORANT Premier October 2024 Elite 1</h3>
+                        <p class="text-[#CBCBCB]">Runner Up</p>
+                    </div>
+
+                    <!-- Achievement 8 -->
+                    <div class="bg-[#162F5A] p-6 rounded-lg border border-[#69B3E3]/20 shadow-[0_0_15px_rgba(254,230,108,0.3)] transition-shadow hover:shadow-[0_0_20px_rgba(254,230,108,0.5)]">
+                        <h3 class="text-xl font-bold mb-2 text-[#FEE66C] font-['Orbitron']">VALORANT Premier August 2024 Advanced 5</h3>
+                        <p class="text-[#CBCBCB]">Runner Up</p>
+                    </div>
+                </div>
+            </div>
 
             <footer class="bg-[#0F2A55] text-[#FCFEFD] py-12 border-t border-[#69B3E3]/20">
                 <div class="container mx-auto px-4">
@@ -205,6 +269,16 @@
                                     </svg>
                                 </a>
                             </div>
+                            <!-- Mobile copyright -->
+                            <div class="mt-4 text-[#CBCBCB] text-sm md:hidden">
+                                © 2025 VIOR Tower. All rights reserved.
+                            </div>
+                        </div>
+                        <!-- Desktop copyright -->
+                        <div class="hidden md:block text-right">
+                            <p class="text-[#CBCBCB] text-sm">
+                                © 2025 VIOR Tower.<br class="hidden lg:block">All rights reserved.
+                            </p>
                         </div>
                     </div>
                 </div>
