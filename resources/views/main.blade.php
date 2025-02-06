@@ -6,6 +6,8 @@
     <title>VIOR Tower</title>
     @viteReactRefresh
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <!-- Add Orbitron font import -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body class="bg-[#0F2A55] text-[#FCFEFD]">
     <!-- Navigation -->
@@ -101,7 +103,8 @@
                 
                 <div class="relative h-full flex items-center justify-center">
                     <div class="text-center space-y-4 md:space-y-8 z-10 px-4 pt-20">
-                        <h1 class="text-4xl md:text-6xl lg:text-8xl font-bold tracking-wider animate-fade-in text-[#FEE66C] drop-shadow-lg">
+                        <!-- Only Orbitron -->
+                        <h1 class="text-4xl md:text-6xl lg:text-8xl font-bold tracking-wider animate-fade-in text-[#FEE66C] drop-shadow-lg font-['Orbitron']">
                             VIOR TOWER
                         </h1>
                         <p class="text-lg md:text-xl lg:text-2xl tracking-wide animate-fade-in-delay text-[#69B3E3] drop-shadow-md">
@@ -162,110 +165,109 @@
                 </div>
             </div>
 
-            <!-- After Latest News Section, before Recent Videos section -->
-            <div class="relative">
-                <!-- Add this more prominent divider -->
-                <div class="w-full h-[3px] bg-gradient-to-r from-transparent via-[#FEE66C] to-transparent opacity-60"></div>
-                
-                <!-- Recent Videos section continues as normal -->
-                <div class="relative bg-[#0F2A55]">
-                    <!-- Single animated background root -->
-                    <div id="main-animated-bg-root" class="absolute inset-0 w-full pointer-events-none" style="z-index: 1;"></div>
+            <!-- Add this more prominent divider -->
+            <div class="w-full h-[3px] bg-gradient-to-r from-transparent via-[#FEE66C] to-transparent opacity-60 relative z-10"></div>
+            <!-- Recent Videos and Discord Communities sections should be wrapped together -->
+            <div class="relative bg-[#0F2A55]">
+                <!-- Single animated background root -->
+                <div id="main-animated-bg-root" class="absolute inset-0 w-full pointer-events-none" style="z-index: 1;"></div>
 
-                    <!-- Recent Videos Section -->
-                    <div class="relative">
-                        <div class="container mx-auto px-4 py-20 relative z-10">
-                            <div class="flex justify-between items-center mb-12">
-                                <h2 class="text-4xl font-bold text-[#FEE66C]">RECENT VIDEOS</h2>
-                                <a href="https://www.youtube.com/@VernalisOrion" class="text-[#69B3E3] hover:text-[#FFAB3D] transition-colors font-medium flex items-center group">
-                                    SEE ALL
-                                    <svg class="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                                    </svg>
+                <!-- Recent Videos Section -->
+                <div class="relative">
+                    <div class="container mx-auto px-4 py-20 relative z-10">
+                        <div class="flex justify-between items-center mb-12">
+                            <h2 class="text-4xl font-bold text-[#FEE66C]">RECENT VIDEOS</h2>
+                            <a href="https://www.youtube.com/@VernalisOrion" class="text-[#69B3E3] hover:text-[#FFAB3D] transition-colors font-medium flex items-center group">
+                                SEE ALL
+                                <svg class="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                        
+                        <!-- Video Grid -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                            <!-- Video Card 1 -->
+                            <div class="group relative bg-[#162F5A] hover:bg-[#1D3B6E] transition-colors">
+                                <a href="https://www.youtube.com/watch?v=M_LmDWdiVmA&t=34s" target="_blank" rel="noopener noreferrer" class="block">
+                                    <div class="aspect-video w-full overflow-hidden relative">
+                                        <img src="/images/igrev.png" alt="Video thumbnail" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                                        <div class="absolute inset-0 bg-gradient-to-t from-[#162F5A] opacity-50 group-hover:opacity-30 transition-opacity"></div>
+                                        <div class="absolute bottom-4 left-4 bg-[#FFAB3D] text-[#0A1C3B] px-2 py-1 text-sm font-bold">
+                                            MATCH
+                                        </div>
+                                    </div>
+                                    <div class="p-4">
+                                        <h3 class="text-[#FCFEFD] font-semibold line-clamp-2 group-hover:text-[#FFAB3D] transition-colors text-lg">
+                                            Reverie VS Ignite | Powered by Vernalis & kinachanchannel
+                                        </h3>
+                                        <p class="text-[#69B3E3] text-sm mt-2">January 2025</p>
+                                    </div>
                                 </a>
                             </div>
-                            
-                            <!-- Video Grid -->
-                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                                <!-- Video Card 1 -->
-                                <div class="group relative bg-[#162F5A] hover:bg-[#1D3B6E] transition-colors">
-                                    <a href="https://www.youtube.com/watch?v=M_LmDWdiVmA&t=34s" target="_blank" rel="noopener noreferrer" class="block">
-                                        <div class="aspect-video w-full overflow-hidden relative">
-                                            <img src="/images/igrev.png" alt="Video thumbnail" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
-                                            <div class="absolute inset-0 bg-gradient-to-t from-[#162F5A] opacity-50 group-hover:opacity-30 transition-opacity"></div>
-                                            <div class="absolute bottom-4 left-4 bg-[#FFAB3D] text-[#0A1C3B] px-2 py-1 text-sm font-bold">
-                                                MATCH
-                                            </div>
-                                        </div>
-                                        <div class="p-4">
-                                            <h3 class="text-[#FCFEFD] font-semibold line-clamp-2 group-hover:text-[#FFAB3D] transition-colors text-lg">
-                                                Reverie VS Ignite | Powered by Vernalis & kinachanchannel
-                                            </h3>
-                                            <p class="text-[#69B3E3] text-sm mt-2">January 2025</p>
-                                        </div>
-                                    </a>
-                                </div>
 
-                                <!-- Video Card 2 -->
-                                <div class="group relative bg-[#162F5A] hover:bg-[#1D3B6E] transition-colors">
-                                    <a href="https://www.youtube.com/watch?v=oaSnYe4WnCg&t=17s" target="_blank" rel="noopener noreferrer" class="block">
-                                        <div class="aspect-video w-full overflow-hidden relative">
-                                            <img src="/images/ecap.png" alt="Video thumbnail" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
-                                            <div class="absolute inset-0 bg-gradient-to-t from-[#162F5A] opacity-50 group-hover:opacity-30 transition-opacity"></div>
-                                            <div class="absolute bottom-4 left-4 bg-[#FFAB3D] text-[#0A1C3B] px-2 py-1 text-sm font-bold">
-                                                MATCH
-                                            </div>
+                            <!-- Video Card 2 -->
+                            <div class="group relative bg-[#162F5A] hover:bg-[#1D3B6E] transition-colors">
+                                <a href="https://www.youtube.com/watch?v=oaSnYe4WnCg&t=17s" target="_blank" rel="noopener noreferrer" class="block">
+                                    <div class="aspect-video w-full overflow-hidden relative">
+                                        <img src="/images/ecap.png" alt="Video thumbnail" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                                        <div class="absolute inset-0 bg-gradient-to-t from-[#162F5A] opacity-50 group-hover:opacity-30 transition-opacity"></div>
+                                        <div class="absolute bottom-4 left-4 bg-[#FFAB3D] text-[#0A1C3B] px-2 py-1 text-sm font-bold">
+                                            MATCH
                                         </div>
-                                        <div class="p-4">
-                                            <h3 class="text-[#FCFEFD] font-semibold line-clamp-2 group-hover:text-[#FFAB3D] transition-colors text-lg">
-                                                Aphrodite VS Eclipse | Powered by Desa Lele
-                                            </h3>
-                                            <p class="text-[#69B3E3] text-sm mt-2">November 2024</p>
-                                        </div>
-                                    </a>
-                                </div>
+                                    </div>
+                                    <div class="p-4">
+                                        <h3 class="text-[#FCFEFD] font-semibold line-clamp-2 group-hover:text-[#FFAB3D] transition-colors text-lg">
+                                            Aphrodite VS Eclipse | Powered by Desa Lele
+                                        </h3>
+                                        <p class="text-[#69B3E3] text-sm mt-2">November 2024</p>
+                                    </div>
+                                </a>
+                            </div>
 
-                                <!-- Video Card 3 -->
-                                <div class="group relative bg-[#162F5A] hover:bg-[#1D3B6E] transition-colors">
-                                    <a href="https://www.youtube.com/watch?v=mISJeFdWZqk&t=6122s" target="_blank" rel="noopener noreferrer" class="block">
-                                        <div class="aspect-video w-full overflow-hidden relative">
-                                            <img src="/images/viordvc.png" alt="Video thumbnail" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
-                                            <div class="absolute inset-0 bg-gradient-to-t from-[#162F5A] opacity-50 group-hover:opacity-30 transition-opacity"></div>
-                                            <div class="absolute bottom-4 left-4 bg-[#69B3E3] text-[#0A1C3B] px-2 py-1 text-sm font-bold">
-                                                ROSTER
-                                            </div>
+                            <!-- Video Card 3 -->
+                            <div class="group relative bg-[#162F5A] hover:bg-[#1D3B6E] transition-colors">
+                                <a href="https://www.youtube.com/watch?v=mISJeFdWZqk&t=6122s" target="_blank" rel="noopener noreferrer" class="block">
+                                    <div class="aspect-video w-full overflow-hidden relative">
+                                        <img src="/images/viordvc.png" alt="Video thumbnail" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                                        <div class="absolute inset-0 bg-gradient-to-t from-[#162F5A] opacity-50 group-hover:opacity-30 transition-opacity"></div>
+                                        <div class="absolute bottom-4 left-4 bg-[#69B3E3] text-[#0A1C3B] px-2 py-1 text-sm font-bold">
+                                            ROSTER
                                         </div>
-                                        <div class="p-4">
-                                            <h3 class="text-[#FCFEFD] font-semibold line-clamp-2 group-hover:text-[#FFAB3D] transition-colors text-lg">
-                                                Meet VIOR DVC Roster | with Meridia Elinor & Xena Celestia
-                                            </h3>
-                                            <p class="text-[#69B3E3] text-sm mt-2">July 2024</p>
-                                        </div>
-                                    </a>
-                                </div>
+                                    </div>
+                                    <div class="p-4">
+                                        <h3 class="text-[#FCFEFD] font-semibold line-clamp-2 group-hover:text-[#FFAB3D] transition-colors text-lg">
+                                            Meet VIOR DVC Roster | with Meridia Elinor & Xena Celestia
+                                        </h3>
+                                        <p class="text-[#69B3E3] text-sm mt-2">July 2024</p>
+                                    </div>
+                                </a>
+                            </div>
 
-                                <!-- Video Card 4 -->
-                                <div class="group relative bg-[#162F5A] hover:bg-[#1D3B6E] transition-colors">
-                                    <a href="https://www.youtube.com/watch?v=B9HdC0FcUZE" target="_blank" rel="noopener noreferrer" class="block">
-                                        <div class="aspect-video w-full overflow-hidden relative">
-                                            <img src="/images/oristariumtamnel.png" alt="Video thumbnail" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
-                                            <div class="absolute inset-0 bg-gradient-to-t from-[#162F5A] opacity-50 group-hover:opacity-30 transition-opacity"></div>
-                                            <div class="absolute bottom-4 left-4 bg-[#FEE66C] text-[#0A1C3B] px-2 py-1 text-sm font-bold">
-                                                NEWS
-                                            </div>
+                            <!-- Video Card 4 -->
+                            <div class="group relative bg-[#162F5A] hover:bg-[#1D3B6E] transition-colors">
+                                <a href="https://www.youtube.com/watch?v=B9HdC0FcUZE" target="_blank" rel="noopener noreferrer" class="block">
+                                    <div class="aspect-video w-full overflow-hidden relative">
+                                        <img src="/images/oristariumtamnel.png" alt="Video thumbnail" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
+                                        <div class="absolute inset-0 bg-gradient-to-t from-[#162F5A] opacity-50 group-hover:opacity-30 transition-opacity"></div>
+                                        <div class="absolute bottom-4 left-4 bg-[#FEE66C] text-[#0A1C3B] px-2 py-1 text-sm font-bold">
+                                            NEWS
                                         </div>
-                                        <div class="p-4">
-                                            <h3 class="text-[#FCFEFD] font-semibold line-clamp-2 group-hover:text-[#FFAB3D] transition-colors text-lg">
-                                                ORISTARIUM | Official Announcement from VIOR Tower
-                                            </h3>
-                                            <p class="text-[#69B3E3] text-sm mt-2">February 2025</p>
-                                        </div>
-                                    </a>
-                                </div>
+                                    </div>
+                                    <div class="p-4">
+                                        <h3 class="text-[#FCFEFD] font-semibold line-clamp-2 group-hover:text-[#FFAB3D] transition-colors text-lg">
+                                            ORISTARIUM | Official Announcement from VIOR Tower
+                                        </h3>
+                                        <p class="text-[#69B3E3] text-sm mt-2">February 2025</p>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Add this more prominent divider -->
+                <div class="w-full h-[3px] bg-gradient-to-r from-transparent via-[#FEE66C] to-transparent opacity-60 relative z-10"></div>
 
                 <!-- Discord Communities Section -->
                 <div class="relative">
@@ -379,7 +381,7 @@
                             <!-- Discord -->
                             <a href="https://discord.gg/QFmu86a8Ak" target="_blank" rel="noopener noreferrer" class="text-[#CBCBCB] hover:text-[#FFAB3D]">
                                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515a.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0a12.64 12.64 0 0 0-.617-1.25a.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057a19.9 19.9 0 0 0 5.993 3.03a.078.078 0 0 0 .084-.028a14.09 14.09 0 0 0 1.226-1.994a.076.076 0 0 0-.041-.106a13.107 13.107 0 0 1-1.872-.892a.077.077 0 0 1-.008-.128a10.2 10.2 0 0 0 .372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127a12.299 12.299 0 0 1-1.873.892a.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028a19.839 19.839 0 0 0 6.002-3.03a.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.956-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419c0-1.333.955-2.419 2.157-2.419c1.21 0 2.176 1.096 2.157 2.42c0 1.333-.946 2.418-2.157 2.418z"/>
+                                    <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515a.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0a12.64 12.64 0 0 0-.617-1.25a.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057a19.9 19.9 0 0 0 5.993 3.03a.078.078 0 0 0 .084-.028a14.09 14.09 0 0 0 1.226-1.994a.076.076 0 0 0-.041-.106a13.107 13.107 0 0 1-1.872-.892a.077.077 0 0 1-.008-.128a10.2 10.2 0 0 0 .372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127a12.299 12.299 0 0 1-1.873.892a.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028a19.839 19.839 0 0 0 6.002-3.03a.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/>
                                 </svg>
                             </a>
                             <!-- YouTube -->
