@@ -59,7 +59,7 @@
                     <a href="/about" class="text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-['Rajdhani']">ABOUT</a>
                     <a href="#" class="text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-['Rajdhani']">ACADEMY</a>
                     <a href="https://www.oristarium.com/" class="text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-['Rajdhani']">ENTERTAINMENT</a>
-                    <a href="#" class="text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-['Rajdhani']">STAFF</a>
+                    <a href="/staff" class="text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-['Rajdhani']">STAFF</a>
                 </nav>
 
                 <!-- Social Media Links -->
@@ -96,9 +96,55 @@
 
         <!-- Main content -->
         <div class="pt-24">
-            <div class="container mx-auto px-4">
-                <!-- Staff Gallery Root -->
-                <div id="staff-gallery-root"></div>
+            <!-- Staff Section -->
+            <div class="container mx-auto px-4 py-16">
+                <h1 class="text-4xl font-bold mb-12 text-[#FEE66C] font-['Orbitron']">MANAGEMENT TEAM</h1>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Staff Member 1 -->
+                    <div class="bg-[#0A1F40] rounded-lg overflow-hidden transition-transform hover:scale-105 border border-[#69B3E3]/20">
+                        <div class="aspect-w-1 aspect-h-1">
+                            <img src="{{ asset('images/staff/placeholder.jpg') }}" alt="Staff Member" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-[#FCFEFD] mb-2 font-['Rajdhani']">STAFF NAME</h3>
+                            <p class="text-[#FFAB3D] font-medium font-['Rajdhani']">POSITION</p>
+                        </div>
+                    </div>
+
+                    <!-- Staff Member 2 -->
+                    <div class="bg-[#0A1F40] rounded-lg overflow-hidden transition-transform hover:scale-105 border border-[#69B3E3]/20">
+                        <div class="aspect-w-1 aspect-h-1">
+                            <img src="{{ asset('images/staff/placeholder.jpg') }}" alt="Staff Member" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-[#FCFEFD] mb-2 font-['Rajdhani']">STAFF NAME</h3>
+                            <p class="text-[#FFAB3D] font-medium font-['Rajdhani']">POSITION</p>
+                        </div>
+                    </div>
+
+                    <!-- Staff Member 3 -->
+                    <div class="bg-[#0A1F40] rounded-lg overflow-hidden transition-transform hover:scale-105 border border-[#69B3E3]/20">
+                        <div class="aspect-w-1 aspect-h-1">
+                            <img src="{{ asset('images/staff/placeholder.jpg') }}" alt="Staff Member" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-[#FCFEFD] mb-2 font-['Rajdhani']">STAFF NAME</h3>
+                            <p class="text-[#FFAB3D] font-medium font-['Rajdhani']">POSITION</p>
+                        </div>
+                    </div>
+
+                    <!-- Staff Member 4 -->
+                    <div class="bg-[#0A1F40] rounded-lg overflow-hidden transition-transform hover:scale-105 border border-[#69B3E3]/20">
+                        <div class="aspect-w-1 aspect-h-1">
+                            <img src="{{ asset('images/staff/placeholder.jpg') }}" alt="Staff Member" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-[#FCFEFD] mb-2 font-['Rajdhani']">STAFF NAME</h3>
+                            <p class="text-[#FFAB3D] font-medium font-['Rajdhani']">POSITION</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
