@@ -7,7 +7,7 @@
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon/favicon.ico') }}">
     <title>VIOR Tower</title>
     @viteReactRefresh
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @vite(['resources/css/app.css', 'resources/js/app.jsx'])
     <!-- Add Orbitron font import -->
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
     <!-- Add Rajdhani font import -->
@@ -123,7 +123,7 @@
                             <a href="https://forms.gle/QAsCu6zv88PkWbnj6" class="bg-[#FFAB3D] hover:bg-[#FEE66C] text-[#0F2A55] px-8 py-3 rounded-none transition-colors font-bold shadow-lg hover:shadow-xl border-2 border-[#FFAB3D]">
                                 JOIN US
                             </a>
-                            <a href="#" class="border-2 border-[#69B3E3] hover:bg-[#69B3E3] hover:text-[#0F2A55] text-[#69B3E3] px-8 py-3 rounded-none transition-colors shadow-lg hover:shadow-xl">
+                            <a href="/teams" class="border-2 border-[#69B3E3] hover:bg-[#69B3E3] hover:text-[#0F2A55] text-[#69B3E3] px-8 py-3 rounded-none transition-colors shadow-lg hover:shadow-xl">
                                 VIEW TEAMS
                             </a>
                         </div>

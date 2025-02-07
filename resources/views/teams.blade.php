@@ -6,7 +6,7 @@
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon/favicon.ico') }}">
     <title>Teams - VIOR Tower</title>
     @viteReactRefresh
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @vite(['resources/css/app.css', 'resources/js/app.jsx'])
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -110,14 +110,14 @@
             <div class="container mx-auto px-4 py-16">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- VIOR Vernalis -->
-                    <div class="group relative aspect-square bg-[#162F5A] overflow-hidden cursor-pointer">
+                    <a href="/teams/vernalis" class="group relative aspect-square bg-[#162F5A] overflow-hidden cursor-pointer block">
                         <img src="/images/vernalis.png" alt="VIOR Vernalis" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-[#0F2A55] via-[#0F2A55]/50 to-transparent opacity-90"></div>
                         <div class="absolute bottom-0 left-0 right-0 p-6">
                             <h3 class="text-2xl font-bold text-[#FCFEFD] mb-2 font-['Orbitron']">VIOR Vernalis</h3>
                             <p class="text-[#FEE66C]">The Most Elite Team in VIOR</p>
                         </div>
-                    </div>
+                    </a>
 
                     <!-- VIOR Eclipse -->
                     <div class="group relative aspect-square bg-[#162F5A] overflow-hidden cursor-pointer">

@@ -219,3 +219,25 @@ body.loading {
     position: relative;
     z-index: 2;
 }
+
+#player-image {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.player-content {
+    transition: opacity 0.3s ease-in-out;
+}
+
+#profile-tag {
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.carousel-button {
+    transition: all 0.3s ease-in-out;
+}
+
+.carousel-button:hover {
+    transform: scale(1.05);
+}
