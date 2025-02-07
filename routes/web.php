@@ -31,3 +31,11 @@ Route::get('/teams/aphrodite', function () {
 Route::get('/teams/reverie', function () {
     return view('reverie');
 });
+
+Route::get('/staff', function () {
+    return view('staff');
+});
+
+Route::get('/academy', function () {
+    return view('academy');
+});

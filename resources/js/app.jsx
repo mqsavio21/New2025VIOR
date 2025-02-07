@@ -6,6 +6,7 @@ import { createRoot } from 'react-dom/client';
 import PlayersSection from './components/PlayersSection';
 import { teamsData } from './data/teamsData';
 
+
 // Add error boundary
 class ErrorBoundary extends React.Component {
     constructor(props) {
@@ -98,6 +99,19 @@ document.addEventListener('DOMContentLoaded', () => {
            <ErrorBoundary>
                <React.StrictMode>
                    <PlayersSection teamData={teamsData.reverie} />
+               </React.StrictMode>
+           </ErrorBoundary>
+       );
+   }
+
+   // Mount Staff Gallery
+   const staffGalleryRoot = document.getElementById('staff-gallery-root');
+   if (staffGalleryRoot) {
+       const root = createRoot(staffGalleryRoot);
+       root.render(
+           <ErrorBoundary>
+               <React.StrictMode>
+                   <StaffGallery />
                </React.StrictMode>
            </ErrorBoundary>
        );

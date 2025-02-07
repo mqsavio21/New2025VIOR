@@ -28,7 +28,7 @@
                         <a href="/about" class="text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-medium font-['Rajdhani']">ABOUT</a>
                         <a href="#" class="text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-medium font-['Rajdhani']">ACADEMY</a>
                         <a href="https://www.oristarium.com/" class="text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-medium font-['Rajdhani']">ENTERTAINMENT</a>
-                        <a href="#" class="text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-medium font-['Rajdhani']">STAFF</a>
+                        <a href="/staff" class="text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-medium font-['Rajdhani']">STAFF</a>
                     </div>
                     <!-- Mobile menu button -->
                     <button id="mobile-menu-button" class="md:hidden text-[#FCFEFD] hover:text-[#FFAB3D] focus:outline-none">
@@ -59,7 +59,7 @@
                     <a href="#" class="text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-['Rajdhani']">ABOUT</a>
                     <a href="#" class="text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-['Rajdhani']">ACADEMY</a>
                     <a href="https://www.oristarium.com/" class="text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-['Rajdhani']">ENTERTAINMENT</a>
-                    <a href="#" class="text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-['Rajdhani']">STAFF</a>
+                    <a href="/staff" class="text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-['Rajdhani']">STAFF</a>
                 </nav>
 
                 <!-- Social Media Links -->
@@ -95,9 +95,29 @@
         </div>
 
         <!-- Main content -->
-        <div class="pt-24 relative overflow-hidden">
+        <div class="pt-24 relative overflow-hidden min-h-screen">
             <!-- Add animated background container -->
             <div id="main-animated-bg-root"></div>
+            
+            <!-- Add Axel background image (left) -->
+            <div class="fixed left-0 top-24 bottom-0 w-1/3 pointer-events-none z-[1]">
+                <img 
+                    src="{{ asset('images/axel.png') }}" 
+                    alt="Background Decoration" 
+                    class="h-full w-full object-contain object-left opacity-15"
+                    style="position: absolute; left: 0; top: 0;"
+                >
+            </div>
+
+            <!-- Add Kirenn background image (right) -->
+            <div class="fixed right-0 top-24 bottom-0 w-1/3 pointer-events-none z-[1]">
+                <img 
+                    src="{{ asset('images/kirenn.png') }}" 
+                    alt="Background Decoration" 
+                    class="h-full w-full object-contain object-right opacity-15 scale-100 md:scale-100 sm:scale-125"
+                    style="position: absolute; right: -15%; top: 0;"
+                >
+            </div>
             
             <!-- About Section -->
             <div class="container mx-auto px-4 py-16 relative z-10">
@@ -235,7 +255,7 @@
                                 <li><a href="/about" class="text-[#CBCBCB] hover:text-[#FFAB3D]">About</a></li>
                                 <li><a href="#" class="text-[#CBCBCB] hover:text-[#FFAB3D]">Academy</a></li>
                                 <li><a href="https://www.oristarium.com/" class="text-[#CBCBCB] hover:text-[#FFAB3D]">Entertainment</a></li>
-                                <li><a href="#" class="text-[#CBCBCB] hover:text-[#FFAB3D]">Staff</a></li>
+                                <li><a href="/staff" class="text-[#CBCBCB] hover:text-[#FFAB3D]">Staff</a></li>
                             </ul>
                         </div>
                         <div>

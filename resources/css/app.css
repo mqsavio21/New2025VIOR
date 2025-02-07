@@ -331,7 +331,7 @@ body.loading {
 }
 
 /* Mobile-specific styles */
-@media (max-width: 468px) {
+@media (max-width: 68px) {
     #player-image-container {
         margin-bottom: 2rem;
     }
