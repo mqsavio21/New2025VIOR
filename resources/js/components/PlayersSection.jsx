@@ -49,10 +49,20 @@ const PlayersSection = ({ teamData }) => {
         // Add navigation buttons
         const controls = document.getElementById('carousel-controls');
         const navButtons = document.createElement('div');
-        navButtons.className = 'flex space-x-4';
+        navButtons.className = 'flex space-x-6';
         navButtons.innerHTML = `
-            <button id="prev-button" class="w-12 h-12 flex items-center justify-center border border-[#FCFEFD]/20 hover:border-[#FFAB3D] text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors">←</button>
-            <button id="next-button" class="w-12 h-12 flex items-center justify-center border border-[#FCFEFD]/20 hover:border-[#FFAB3D] text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors">→</button>
+            <button id="prev-button" class="group w-16 h-32 flex items-center justify-center rounded-full bg-[#0F2A55]/80 border-2 border-[#FFAB3D] text-[#FFAB3D] transition-all duration-300 relative overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-r from-[#FFAB3D]/0 via-[#FFAB3D]/10 to-[#FFAB3D]/0 transform -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+                <div class="relative z-10">
+                    <i class="fas fa-chevron-left text-2xl group-hover:text-[#FEE66C] transition-colors"></i>
+                </div>
+            </button>
+            <button id="next-button" class="group w-16 h-32 flex items-center justify-center rounded-full bg-[#0F2A55]/80 border-2 border-[#FFAB3D] text-[#FFAB3D] transition-all duration-300 relative overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-r from-[#FFAB3D]/0 via-[#FFAB3D]/10 to-[#FFAB3D]/0 transform -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+                <div class="relative z-10">
+                    <i class="fas fa-chevron-right text-2xl group-hover:text-[#FEE66C] transition-colors"></i>
+                </div>
+            </button>
         `;
         controls.appendChild(navButtons);
 

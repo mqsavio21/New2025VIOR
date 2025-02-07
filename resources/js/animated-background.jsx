@@ -19,6 +19,21 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    // Mount main content animated background
+    const mainBgContainer = document.getElementById('main-animated-bg-root');
+    if (mainBgContainer) {
+        try {
+            const mainBgRoot = createRoot(mainBgContainer);
+            mainBgRoot.render(
+                <React.StrictMode>
+                    <AnimatedGradientBackground />
+                </React.StrictMode>
+            );
+        } catch (error) {
+            console.error('Error mounting main animated background:', error);
+        }
+    }
+
     // Mount shared animated background
     const sharedBgContainer = document.getElementById('shared-animated-bg-root');
     if (sharedBgContainer) {

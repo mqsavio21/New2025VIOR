@@ -110,7 +110,7 @@
             <div class="container mx-auto px-4 py-16">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- VIOR Vernalis -->
-                    <a href="/teams/vernalis" class="group relative aspect-square bg-[#162F5A] overflow-hidden cursor-pointer block">
+                    <a href="/teams/vernalis" class="group relative aspect-square bg-[#162F5A] overflow-hidden cursor-pointer block shadow-lg transition-shadow duration-300 hover:shadow-[0_0_20px_rgba(254,230,108,0.5)]">
                         <img src="/images/vernalis.png" alt="VIOR Vernalis" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-[#0F2A55] via-[#0F2A55]/50 to-transparent opacity-90"></div>
                         <div class="absolute bottom-0 left-0 right-0 p-6">
@@ -120,7 +120,7 @@
                     </a>
 
                     <!-- VIOR Eclipse -->
-                    <div class="group relative aspect-square bg-[#162F5A] overflow-hidden cursor-pointer">
+                    <div class="group relative aspect-square bg-[#162F5A] overflow-hidden cursor-pointer shadow-lg transition-shadow duration-300 hover:shadow-[0_0_20px_rgba(254,230,108,0.5)]">
                         <img src="{{ asset('images/eclipse.png') }}" alt="VIOR Eclipse" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-[#0F2A55] via-[#0F2A55]/50 to-transparent opacity-90"></div>
                         <div class="absolute bottom-0 left-0 right-0 p-6">
@@ -130,7 +130,7 @@
                     </div>
 
                     <!-- VIOR Ignite -->
-                    <div class="group relative aspect-square bg-[#162F5A] overflow-hidden cursor-pointer">
+                    <div class="group relative aspect-square bg-[#162F5A] overflow-hidden cursor-pointer shadow-lg transition-shadow duration-300 hover:shadow-[0_0_20px_rgba(254,230,108,0.5)]">
                         <img src="/images/news2.png" alt="VIOR Ignite" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-[#0F2A55] via-[#0F2A55]/50 to-transparent opacity-90"></div>
                         <div class="absolute bottom-0 left-0 right-0 p-6">
@@ -140,7 +140,7 @@
                     </div>
 
                     <!-- VIOR Aphrodite -->
-                    <div class="group relative aspect-square bg-[#162F5A] overflow-hidden cursor-pointer">
+                    <div class="group relative aspect-square bg-[#162F5A] overflow-hidden cursor-pointer shadow-lg transition-shadow duration-300 hover:shadow-[0_0_20px_rgba(254,230,108,0.5)]">
                         <img src="/images/aphrodite.png" alt="VIOR Ignite" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-[#0F2A55] via-[#0F2A55]/50 to-transparent opacity-90"></div>
                         <div class="absolute bottom-0 left-0 right-0 p-6">
@@ -150,7 +150,7 @@
                     </div>
 
                     <!-- VIOR Reverie -->
-                    <div class="group relative aspect-square bg-[#162F5A] overflow-hidden cursor-pointer">
+                    <div class="group relative aspect-square bg-[#162F5A] overflow-hidden cursor-pointer shadow-lg transition-shadow duration-300 hover:shadow-[0_0_20px_rgba(254,230,108,0.5)]">
                         <img src="/images/reverie.png" alt="VIOR Ignite" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-[#0F2A55] via-[#0F2A55]/50 to-transparent opacity-90"></div>
                         <div class="absolute bottom-0 left-0 right-0 p-6">

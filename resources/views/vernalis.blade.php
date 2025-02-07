@@ -101,11 +101,14 @@
         </div>
 
         <!-- Main Content Area -->
-        <main class="pt-24">
+        <main class="pt-24 relative">
+            <!-- Add animated background container -->
+            <div id="main-animated-bg-root" class="absolute inset-0 w-full h-full"></div>
+            
             <!-- Add this div for React to mount -->
-            <div id="players-section-root"></div>
+            <div id="players-section-root" class="relative z-10"></div>
 
-            <div class="min-h-screen bg-[#0F2A55] relative">
+            <div class="min-h-screen bg-[#0F2A55]/80 backdrop-blur-sm relative z-10">
                 <div class="container mx-auto px-4 py-16">
                     <div class="flex flex-col lg:flex-row items-center justify-between">
                         <!-- Left Column - Player Info -->
@@ -134,28 +137,29 @@
                                     <div class="w-24 h-[2px] bg-[#FFAB3D]/20">
                                         <div class="h-full bg-[#FFAB3D]" id="progress-bar"></div>
                                     </div>
-                                    <span class="text-[#FCFEFD] font-['Rajdhani'] text-xl" id="total-count">5</span>
+                                    <span class="text-[#FCFEFD] font-['Rajdhani'] text-xl" id="total-count">7</span>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Right Column - Player Image -->
-                        <div class="w-full lg:w-1/2 flex justify-center items-center h-[500px]" id="player-image-container">
-                            <div class="relative w-[400px] h-[400px]">
+                        <div id="player-image-container">
+                            <div class="relative">
                                 <!-- Profile Tag -->
-                                <div class="absolute top-0 left-0 z-10 p-4 bg-[#0F2A55]/80 text-[#FCFEFD] font-['Rajdhani']" id="profile-tag">
+                                <div id="profile-tag">
                                     PROFILE // DUELIST
                                 </div>
                                 
-                                <div class="relative w-full h-full">
-                                    <div class="absolute inset-0 bg-gradient-to-br from-[#FFAB3D]/10 to-transparent"></div>
-                                    <img
-                                        id="player-image"
-                                        src="/images/players/haru.png"
-                                        alt="Player"
-                                        class="w-full h-full object-contain"
-                                    />
-                                </div>
+                                <!-- Gradient Overlay -->
+                                <div class="image-gradient-overlay"></div>
+                                
+                                <!-- Image with Shadow -->
+                                <img
+                                    id="player-image"
+                                    src="/images/players/haru.png"
+                                    alt="Player"
+                                    class="relative z-10"
+                                />
                             </div>
                         </div>
                     </div>
