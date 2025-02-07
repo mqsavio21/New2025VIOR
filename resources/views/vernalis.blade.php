@@ -31,7 +31,7 @@
                     <div class="hidden md:flex space-x-8">
                         <a href="#" class="text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-medium font-['Rajdhani']">HOME</a>
                         <a href="/teams" class="text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-medium font-['Rajdhani']">TEAMS</a>
-                        <a href="#" class="text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-medium font-['Rajdhani']">ABOUT</a>
+                        <a href="/about" class="text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-medium font-['Rajdhani']">ABOUT</a>
                         <a href="#" class="text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-medium font-['Rajdhani']">ACADEMY</a>
                         <a href="https://www.oristarium.com/" class="text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-medium font-['Rajdhani']">ENTERTAINMENT</a>
                         <a href="#" class="text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-medium font-['Rajdhani']">STAFF</a>
@@ -60,9 +60,9 @@
                 
                 <!-- Navigation Links -->
                 <nav class="flex flex-col space-y-6">
-                    <a href="#" class="text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-['Rajdhani']">HOME</a>
+                    <a href="/" class="text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-['Rajdhani']">HOME</a>
                     <a href="/teams" class="text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-['Rajdhani']">TEAMS</a>
-                    <a href="#" class="text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-['Rajdhani']">ABOUT</a>
+                    <a href="/about" class="text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-['Rajdhani']">ABOUT</a>
                     <a href="#" class="text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-['Rajdhani']">ACADEMY</a>
                     <a href="https://www.oristarium.com/" class="text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-['Rajdhani']">ENTERTAINMENT</a>
                     <a href="#" class="text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-['Rajdhani']">STAFF</a>
@@ -109,29 +109,29 @@
             <div id="players-section-root" class="relative z-10"></div>
 
             <div class="min-h-screen bg-[#0F2A55]/80 backdrop-blur-sm relative z-10">
-                <div class="container mx-auto px-4 py-16">
+                <div class="container mx-auto px-4 py-8 md:py-16">
                     <div class="flex flex-col lg:flex-row items-center justify-between">
                         <!-- Left Column - Player Info -->
-                        <div class="w-full lg:w-1/2 space-y-6" id="player-info">
+                        <div class="w-full lg:w-1/2 space-y-4 md:space-y-6 text-center lg:text-left mb-8 lg:mb-0" id="player-info">
                             <div class="space-y-2">
-                                <h2 class="text-[#FCFEFD] text-xl font-['Rajdhani']" id="player-name">
+                                <h2 class="text-[#FCFEFD] text-lg md:text-xl font-['Rajdhani']" id="player-name">
                                     Akazaya Riota
                                 </h2>
-                                <h1 class="text-[#FFAB3D] text-7xl font-bold font-['Orbitron']" id="player-game-name">
+                                <h1 class="text-[#FFAB3D] text-4xl md:text-7xl font-bold font-['Orbitron']" id="player-game-name">
                                     Duelist
                                 </h1>
                             </div>
 
-                            <p class="text-[#CBCBCB] text-lg leading-relaxed max-w-xl" id="player-description">
+                            <p class="text-[#CBCBCB] text-base md:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0" id="player-description">
                                 A formidable Duelist in the scene, known for his aggressive playstyle...
                             </p>
 
-                            <div class="flex space-x-6 pt-4" id="player-social-links">
+                            <div class="flex justify-center lg:justify-start space-x-6 pt-4" id="player-social-links">
                                 <!-- Social links will be populated by React -->
                             </div>
 
                             <!-- Navigation Controls -->
-                            <div id="carousel-controls" class="flex items-center space-x-8 pt-8">
+                            <div id="carousel-controls" class="flex flex-col md:flex-row items-center justify-center lg:justify-start space-y-4 md:space-y-0 space-x-0 md:space-x-8 pt-8">
                                 <div class="flex items-center space-x-4">
                                     <span class="text-[#FFAB3D] font-['Rajdhani'] text-xl" id="current-index">1</span>
                                     <div class="w-24 h-[2px] bg-[#FFAB3D]/20">
@@ -143,10 +143,10 @@
                         </div>
 
                         <!-- Right Column - Player Image -->
-                        <div id="player-image-container">
-                            <div class="relative">
+                        <div id="player-image-container" class="w-full lg:w-1/2 h-[350px] md:h-[450px]">
+                            <div class="relative w-full md:w-[400px] h-full mx-auto">
                                 <!-- Profile Tag -->
-                                <div id="profile-tag">
+                                <div id="profile-tag" class="text-sm md:text-base">
                                     PROFILE // DUELIST
                                 </div>
                                 
@@ -158,7 +158,7 @@
                                     id="player-image"
                                     src="/images/players/haru.png"
                                     alt="Player"
-                                    class="relative z-10"
+                                    class="relative z-10 w-full h-full object-contain"
                                 />
                             </div>
                         </div>
@@ -177,9 +177,9 @@
                     <div>
                         <h3 class="text-xl font-bold mb-4 text-[#FEE66C]">QUICK LINKS</h3>
                         <ul class="space-y-2">
-                            <li><a href="#" class="text-[#CBCBCB] hover:text-[#FFAB3D]">Home</a></li>
+                            <li><a href="/" class="text-[#CBCBCB] hover:text-[#FFAB3D]">Home</a></li>
                             <li><a href="/teams" class="text-[#CBCBCB] hover:text-[#FFAB3D]">Teams</a></li>
-                            <li><a href="#" class="text-[#CBCBCB] hover:text-[#FFAB3D]">About</a></li>
+                            <li><a href="/about" class="text-[#CBCBCB] hover:text-[#FFAB3D]">About</a></li>
                             <li><a href="#" class="text-[#CBCBCB] hover:text-[#FFAB3D]">Academy</a></li>
                             <li><a href="https://www.oristarium.com/" class="text-[#CBCBCB] hover:text-[#FFAB3D]">Entertainment</a></li>
                             <li><a href="#" class="text-[#CBCBCB] hover:text-[#FFAB3D]">Staff</a></li>

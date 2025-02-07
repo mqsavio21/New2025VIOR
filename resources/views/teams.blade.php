@@ -25,7 +25,7 @@
                     <div class="hidden md:flex space-x-8">
                         <a href="/" class="text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-medium font-['Rajdhani']">HOME</a>
                         <a href="/teams" class="text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-medium font-['Rajdhani']">TEAMS</a>
-                        <a href="#" class="text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-medium font-['Rajdhani']">ABOUT</a>
+                        <a href="/about" class="text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-medium font-['Rajdhani']">ABOUT</a>
                         <a href="#" class="text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-medium font-['Rajdhani']">ACADEMY</a>
                         <a href="https://www.oristarium.com/" class="text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-medium font-['Rajdhani']">ENTERTAINMENT</a>
                         <a href="#" class="text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-medium font-['Rajdhani']">STAFF</a>
@@ -56,7 +56,7 @@
                 <nav class="flex flex-col space-y-6">
                     <a href="/" class="text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-['Rajdhani']">HOME</a>
                     <a href="/teams" class="text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-['Rajdhani']">TEAMS</a>
-                    <a href="#" class="text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-['Rajdhani']">ABOUT</a>
+                    <a href="/about" class="text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-['Rajdhani']">ABOUT</a>
                     <a href="#" class="text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-['Rajdhani']">ACADEMY</a>
                     <a href="https://www.oristarium.com/" class="text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-['Rajdhani']">ENTERTAINMENT</a>
                     <a href="#" class="text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-['Rajdhani']">STAFF</a>
@@ -120,44 +120,45 @@
                     </a>
 
                     <!-- VIOR Eclipse -->
-                    <div class="group relative aspect-square bg-[#162F5A] overflow-hidden cursor-pointer shadow-lg transition-shadow duration-300 hover:shadow-[0_0_20px_rgba(254,230,108,0.5)]">
+                    <a href="/teams/eclipse" class="group relative aspect-square bg-[#162F5A] overflow-hidden cursor-pointer block shadow-lg transition-shadow duration-300 hover:shadow-[0_0_20px_rgba(254,230,108,0.5)]">
                         <img src="{{ asset('images/eclipse.png') }}" alt="VIOR Eclipse" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-[#0F2A55] via-[#0F2A55]/50 to-transparent opacity-90"></div>
                         <div class="absolute bottom-0 left-0 right-0 p-6">
                             <h3 class="text-2xl font-bold text-[#FCFEFD] mb-2 font-['Orbitron']">VIOR Eclipse</h3>
                             <p class="text-[#FEE66C]">Strategic and Tactical</p>
                         </div>
-                    </div>
+                    </a>
 
                     <!-- VIOR Ignite -->
-                    <div class="group relative aspect-square bg-[#162F5A] overflow-hidden cursor-pointer shadow-lg transition-shadow duration-300 hover:shadow-[0_0_20px_rgba(254,230,108,0.5)]">
+                    <a href="/teams/ignite" class="group relative aspect-square bg-[#162F5A] overflow-hidden cursor-pointer block shadow-lg transition-shadow duration-300 hover:shadow-[0_0_20px_rgba(254,230,108,0.5)]">
                         <img src="/images/news2.png" alt="VIOR Ignite" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-[#0F2A55] via-[#0F2A55]/50 to-transparent opacity-90"></div>
                         <div class="absolute bottom-0 left-0 right-0 p-6">
                             <h3 class="text-2xl font-bold text-[#FCFEFD] mb-2 font-['Orbitron']">VIOR Ignite</h3>
                             <p class="text-[#FEE66C]">Fiery Passion and Unyielding Spirit</p>
                         </div>
-                    </div>
+                    </a>
 
                     <!-- VIOR Aphrodite -->
-                    <div class="group relative aspect-square bg-[#162F5A] overflow-hidden cursor-pointer shadow-lg transition-shadow duration-300 hover:shadow-[0_0_20px_rgba(254,230,108,0.5)]">
+                    <a href="/teams/aphrodite" class="group relative aspect-square bg-[#162F5A] overflow-hidden cursor-pointer shadow-lg transition-shadow duration-300 hover:shadow-[0_0_20px_rgba(254,230,108,0.5)]">
                         <img src="/images/aphrodite.png" alt="VIOR Ignite" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-[#0F2A55] via-[#0F2A55]/50 to-transparent opacity-90"></div>
                         <div class="absolute bottom-0 left-0 right-0 p-6">
                             <h3 class="text-2xl font-bold text-[#FCFEFD] mb-2 font-['Orbitron']">VIOR Aphrodite</h3>
                             <p class="text-[#FEE66C]">Stunning and Elegant</p>
                         </div>
-                    </div>
+                    </a>
 
                     <!-- VIOR Reverie -->
-                    <div class="group relative aspect-square bg-[#162F5A] overflow-hidden cursor-pointer shadow-lg transition-shadow duration-300 hover:shadow-[0_0_20px_rgba(254,230,108,0.5)]">
+                    <a href="/teams/reverie" class="group relative aspect-square bg-[#162F5A] overflow-hidden cursor-pointer shadow-lg transition-shadow duration-300 hover:shadow-[0_0_20px_rgba(254,230,108,0.5)]">
                         <img src="/images/reverie.png" alt="VIOR Ignite" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-[#0F2A55] via-[#0F2A55]/50 to-transparent opacity-90"></div>
                         <div class="absolute bottom-0 left-0 right-0 p-6">
                             <h3 class="text-2xl font-bold text-[#FCFEFD] mb-2 font-['Orbitron']">VIOR Reverie</h3>
                             <p class="text-[#FEE66C]">Turning Daydreams into Reality</p>
                         </div>
-                    </div>
+                    </a>
+
                 </div>
             </div>
             <!-- Add this more prominent divider -->
@@ -235,9 +236,9 @@
                         <div>
                             <h3 class="text-xl font-bold mb-4 text-[#FEE66C]">QUICK LINKS</h3>
                             <ul class="space-y-2">
-                                <li><a href="#" class="text-[#CBCBCB] hover:text-[#FFAB3D]">Home</a></li>
+                                <li><a href="/" class="text-[#CBCBCB] hover:text-[#FFAB3D]">Home</a></li>
                                 <li><a href="/teams" class="text-[#CBCBCB] hover:text-[#FFAB3D]">Teams</a></li>
-                                <li><a href="#" class="text-[#CBCBCB] hover:text-[#FFAB3D]">About</a></li>
+                                <li><a href="/about" class="text-[#CBCBCB] hover:text-[#FFAB3D]">About</a></li>
                                 <li><a href="#" class="text-[#CBCBCB] hover:text-[#FFAB3D]">Academy</a></li>
                                 <li><a href="https://www.oristarium.com/" class="text-[#CBCBCB] hover:text-[#FFAB3D]">Entertainment</a></li>
                                 <li><a href="#" class="text-[#CBCBCB] hover:text-[#FFAB3D]">Staff</a></li>

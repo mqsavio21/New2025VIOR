@@ -33,12 +33,13 @@ class ErrorBoundary extends React.Component {
 document.addEventListener('DOMContentLoaded', () => {
     console.log('DOM Content Loaded');
     
-    const playersRoot = document.getElementById('players-section-root');
-    console.log('Players root element:', playersRoot);
+    // Try to mount Vernalis section
+    const vernalisRoot = document.getElementById('players-section-root');
+    console.log('Players root element:', vernalisRoot);
     
-    if (playersRoot) {
+    if (vernalisRoot) {
         console.log('Mounting PlayersSection with data:', teamsData.vernalis);
-        const root = createRoot(playersRoot);
+        const root = createRoot(vernalisRoot);
         root.render(
             <ErrorBoundary>
                 <React.StrictMode>
@@ -49,17 +50,58 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
         console.error('Could not find players-section-root element');
     }
+
+    // Try to mount Ignite section
+    const igniteRoot = document.getElementById('ignite-players-section-root');
+    if (igniteRoot) {
+        const root = createRoot(igniteRoot);
+        root.render(
+            <ErrorBoundary>
+                <React.StrictMode>
+                    <PlayersSection teamData={teamsData.ignite} />
+                </React.StrictMode>
+            </ErrorBoundary>
+        );
+    }
+
+    // Try to mount Eclipse section
+    const eclipseRoot = document.getElementById('eclipse-players-section-root');
+    if (eclipseRoot) {
+        const root = createRoot(eclipseRoot);
+        root.render(
+            <ErrorBoundary>
+                <React.StrictMode>
+                    <PlayersSection teamData={teamsData.eclipse} />
+                </React.StrictMode>
+            </ErrorBoundary>
+        );
+    }
+
+    // Try to mount Aphrodite section
+    const aphroditeRoot = document.getElementById('aphrodite-players-section-root');
+    if (aphroditeRoot) {
+        const root = createRoot(aphroditeRoot);
+        root.render(
+            <ErrorBoundary>
+                <React.StrictMode>
+                    <PlayersSection teamData={teamsData.aphrodite} />
+                </React.StrictMode>
+            </ErrorBoundary>
+        );
+    }
+
+   // Try to mount reverie section
+   const reverieRoot = document.getElementById('reverie-players-section-root');
+   if (reverieRoot) {
+       const root = createRoot(reverieRoot);
+       root.render(
+           <ErrorBoundary>
+               <React.StrictMode>
+                   <PlayersSection teamData={teamsData.reverie} />
+               </React.StrictMode>
+           </ErrorBoundary>
+       );
+   }
+
 });
 
-// Comment out or remove this duplicate mounting
-// ReactDOM.createRoot(document.getElementById('app')).render(<App />);
-
-// const App = () => {
-//     return (
-//         <div>
-//             <PlayersSection teamData={teamsData.vernalis} />
-//         </div>
-//     );
-// };
-
-// export default App;

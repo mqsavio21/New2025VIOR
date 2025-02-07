@@ -329,3 +329,57 @@ body.loading {
     position: relative;
     z-index: 2;
 }
+
+/* Mobile-specific styles */
+@media (max-width: 468px) {
+    #player-image-container {
+        margin-bottom: 2rem;
+    }
+
+    #profile-tag {
+        font-size: 0.875rem;
+        padding: 0.75rem 1rem;
+    }
+
+    #carousel-controls button {
+        width: 3rem;
+        height: 6rem;
+    }
+
+    .carousel-button i {
+        font-size: 1rem;
+    }
+
+    #player-image {
+        max-height: 300px;
+        margin: 0 auto;
+    }
+}
+
+/* Improve touch targets on mobile */
+@media (max-width: 768px) {
+    #prev-button, #next-button {
+        min-width: 44px;
+        min-height: 44px;
+        padding: 12px;
+    }
+
+    #mobile-menu-button,
+    #mobile-menu-close {
+        min-width: 44px;
+        min-height: 44px;
+        padding: 10px;
+    }
+}
+
+/* Adjust spacing for mobile */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    #player-info {
+        padding: 0 1rem;
+    }
+}
