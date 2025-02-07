@@ -139,15 +139,29 @@
                 </div>
 
                 <!-- Mission Section -->
-                <div class="mb-20">
-                    <h2 class="text-5xl md:text-7xl font-bold text-[#FEE66C] mb-8 font-['Orbitron']">OUR MISSION</h2>
-                    <div class="max-w-4xl">
-                        <p class="text-xl md:text-2xl text-[#CBCBCB] font-['Rajdhani']">
-                        We want to build a place for empowerment through education, foster a supportive community, promote positive gaming etiquette, and integration of art & gaming.
-                        </p><br>
-                        <p class="text-xl md:text-2xl text-[#CBCBCB] font-['Rajdhani']">
-                        We are hoping to be a suitable place for nurturing ground in Indonesia for aspiring Valorant players especially for VStreamers, where talent transcends rank and every individual is empowered to unlock their full potential.
-                        </p>
+                <div class="mb-20 flex flex-col md:flex-row items-center gap-12">
+                    
+                    <!-- left side - Text -->
+                    <div class="w-full md:w-1/2">
+                        <h2 class="text-5xl md:text-7xl font-bold text-[#FEE66C] mb-8 font-['Orbitron']">OUR MISSION</h2>
+                        <div class="space-y-6">
+                            <p class="text-xl md:text-2xl text-[#CBCBCB] font-['Rajdhani']">
+                                We want to build a place for empowerment through education, foster a supportive community, promote positive gaming etiquette, and integration of art & gaming.
+                            </p>
+                            <p class="text-xl md:text-2xl text-[#CBCBCB] font-['Rajdhani']">
+                                We are hoping to be a suitable place for nurturing ground in Indonesia for aspiring Valorant players especially for VStreamers, where talent transcends rank and every individual is empowered to unlock their full potential.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- right side - Image -->
+                    <div class="w-full md:w-1/2">
+                        <div class="relative">
+                            <img 
+                                src="{{ asset('images/mission.png') }}" 
+                                alt="Esports Player" 
+                                class="w-full h-[500px] object-cover rounded-lg shadow-[0_0_15px_rgba(254,230,108,0.3)]"
+                            >
+                        </div>
                     </div>
                 </div>
 
