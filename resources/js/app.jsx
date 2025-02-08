@@ -5,6 +5,7 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import PlayersSection from './components/PlayersSection';
 import { teamsData } from './data/teamsData';
+import NotableMembers from './components/NotableMembers';
 
 
 // Add error boundary
@@ -115,6 +116,24 @@ document.addEventListener('DOMContentLoaded', () => {
                </React.StrictMode>
            </ErrorBoundary>
        );
+   }
+
+   // Mount Academy Hero
+   const academyHeroRoot = document.getElementById('academy-hero-root');
+   if (academyHeroRoot) {
+       const root = createRoot(academyHeroRoot);
+       root.render(
+           <ErrorBoundary>
+               <React.StrictMode>
+                   <AcademyHero />
+               </React.StrictMode>
+           </ErrorBoundary>
+       );
+   }
+
+   if (document.getElementById('notable-members-root')) {
+       const root = createRoot(document.getElementById('notable-members-root'));
+       root.render(<NotableMembers />);
    }
 
 });

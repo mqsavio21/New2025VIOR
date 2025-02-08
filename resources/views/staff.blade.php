@@ -14,7 +14,8 @@
     <!-- Loading Screen Container -->
     <div id="loading-screen-root"></div>
 
-    <div id="page-content" class="transition-transform duration-300 ease-in-out">
+    <!-- Page content wrapper -->
+    <div id="page-content" class="min-h-screen transition-transform duration-300 ease-in-out">
         <!-- Navigation -->
         <nav class="fixed w-full z-50 bg-[#0F2A55]/90 backdrop-blur-sm border-b border-[#FEE66C]/40">
             <div class="container mx-auto px-4 py-4">
@@ -26,7 +27,7 @@
                         <a href="/" class="text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-medium font-['Rajdhani']">HOME</a>
                         <a href="/teams" class="text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-medium font-['Rajdhani']">TEAMS</a>
                         <a href="/about" class="text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-medium font-['Rajdhani']">ABOUT</a>
-                        <a href="#" class="text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-medium font-['Rajdhani']">ACADEMY</a>
+                        <a href="/academy" class="text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-medium font-['Rajdhani']">ACADEMY</a>
                         <a href="https://www.oristarium.com/" class="text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-medium font-['Rajdhani']">ENTERTAINMENT</a>
                         <a href="/staff" class="text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-medium font-['Rajdhani']">STAFF</a>
                     </div>
@@ -39,9 +40,9 @@
                 </div>
             </div>
         </nav>
-
-        <!-- Mobile Menu (Side Drawer) -->
-        <div id="mobile-menu" class="fixed top-0 left-0 w-80 h-full bg-[#0F2A55] transform transition-transform duration-300 ease-in-out z-50 border-r border-[#69B3E3]/20">
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="fixed top-0 left-0 w-80 h-full bg-[#0F2A55]/90 transform transition-transform duration-300 ease-in-out z-50 border-r border-[#69B3E3]/20">
             <div class="h-full flex flex-col p-6">
                 <!-- Close button -->
                 <div class="flex justify-end mb-8">
@@ -57,7 +58,7 @@
                     <a href="/" class="text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-['Rajdhani']">HOME</a>
                     <a href="/teams" class="text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-['Rajdhani']">TEAMS</a>
                     <a href="/about" class="text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-['Rajdhani']">ABOUT</a>
-                    <a href="#" class="text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-['Rajdhani']">ACADEMY</a>
+                    <a href="/academy" class="text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-['Rajdhani']">ACADEMY</a>
                     <a href="https://www.oristarium.com/" class="text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-['Rajdhani']">ENTERTAINMENT</a>
                     <a href="/staff" class="text-xl font-medium text-[#FCFEFD] hover:text-[#FFAB3D] transition-colors font-['Rajdhani']">STAFF</a>
                 </nav>
@@ -86,7 +87,7 @@
                         <!-- YouTube -->
                         <a href="https://www.youtube.com/@VernalisOrion" target="_blank" rel="noopener noreferrer" class="text-[#FCFEFD] hover:text-[#FFAB3D]">
                             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
                             </svg>
                         </a>
                     </div>
@@ -95,61 +96,141 @@
         </div>
 
         <!-- Main content -->
-        <div class="pt-24">
-            <!-- Staff Section -->
-            <div class="container mx-auto px-4 py-16">
-                <h1 class="text-4xl font-bold mb-12 text-[#FEE66C] font-['Orbitron']">MANAGEMENT TEAM</h1>
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <!-- Staff Member 1 -->
-                    <div class="bg-[#0A1F40] rounded-lg overflow-hidden transition-transform hover:scale-105 border border-[#69B3E3]/20">
-                        <div class="aspect-w-1 aspect-h-1">
-                            <img src="{{ asset('images/staff/placeholder.jpg') }}" alt="Staff Member" class="w-full h-full object-cover">
+        <div class="pt-36 relative overflow-hidden min-h-screen">
+            <!-- Main animated background container -->
+            <div id="main-animated-bg-root"></div>
+            <!-- Staff Section Container -->
+            <div class="container mx-auto px-4">
+                <!-- Board Members Section -->
+                <section class="mb-24 relative z-20">
+                    <h1 class="text-4xl font-bold mb-16 text-[#FEE66C] font-['Orbitron']">
+                        Board Members
+                    </h1>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <!-- Staff Member 1 -->
+                        <div class="bg-[#0A1F40]/90 rounded-lg overflow-hidden transition-transform hover:scale-105 border border-[#69B3E3]/20 shadow-[0_0_15px_rgba(254,230,108,0.3)]">
+                            <div class="aspect-w-1 aspect-h-1">
+                                <img src="{{ asset('images/haru.png') }}" alt="Staff Member" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-[#FCFEFD] mb-2 font-['Rajdhani']">HaruMiz</h3>
+                                <p class="text-[#FFAB3D] font-medium font-['Rajdhani']">CEO, Founder, VIOR Vernalis Coach</p>
+                            </div>
                         </div>
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold text-[#FCFEFD] mb-2 font-['Rajdhani']">STAFF NAME</h3>
-                            <p class="text-[#FFAB3D] font-medium font-['Rajdhani']">POSITION</p>
-                        </div>
-                    </div>
 
-                    <!-- Staff Member 2 -->
-                    <div class="bg-[#0A1F40] rounded-lg overflow-hidden transition-transform hover:scale-105 border border-[#69B3E3]/20">
-                        <div class="aspect-w-1 aspect-h-1">
-                            <img src="{{ asset('images/staff/placeholder.jpg') }}" alt="Staff Member" class="w-full h-full object-cover">
+                        <!-- Staff Member 2 -->
+                        <div class="bg-[#0A1F40]/90 rounded-lg overflow-hidden transition-transform hover:scale-105 border border-[#69B3E3]/20 shadow-[0_0_15px_rgba(254,230,108,0.3)]">
+                            <div class="aspect-w-1 aspect-h-1">
+                                <img src="{{ asset('images/ovio.png') }}" alt="Staff Member" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-[#FCFEFD] mb-2 font-['Rajdhani']">Ovio Damion</h3>
+                                <p class="text-[#FFAB3D] font-medium font-['Rajdhani']">Community Director & Founder</p>
+                            </div>
                         </div>
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold text-[#FCFEFD] mb-2 font-['Rajdhani']">STAFF NAME</h3>
-                            <p class="text-[#FFAB3D] font-medium font-['Rajdhani']">POSITION</p>
-                        </div>
-                    </div>
 
-                    <!-- Staff Member 3 -->
-                    <div class="bg-[#0A1F40] rounded-lg overflow-hidden transition-transform hover:scale-105 border border-[#69B3E3]/20">
-                        <div class="aspect-w-1 aspect-h-1">
-                            <img src="{{ asset('images/staff/placeholder.jpg') }}" alt="Staff Member" class="w-full h-full object-cover">
+                        <!-- Staff Member 3 -->
+                        <div class="bg-[#0A1F40]/90 rounded-lg overflow-hidden transition-transform hover:scale-105 border border-[#69B3E3]/20 shadow-[0_0_15px_rgba(254,230,108,0.3)]">
+                            <div class="aspect-w-1 aspect-h-1">
+                                <img src="{{ asset('images/roffi.png') }}" alt="Staff Member" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-[#FCFEFD] mb-2 font-['Rajdhani']">Roffi Daijoubu</h3>
+                                <p class="text-[#FFAB3D] font-medium font-['Rajdhani']">CTO & Founder</p>
+                            </div>
                         </div>
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold text-[#FCFEFD] mb-2 font-['Rajdhani']">STAFF NAME</h3>
-                            <p class="text-[#FFAB3D] font-medium font-['Rajdhani']">POSITION</p>
-                        </div>
-                    </div>
 
-                    <!-- Staff Member 4 -->
-                    <div class="bg-[#0A1F40] rounded-lg overflow-hidden transition-transform hover:scale-105 border border-[#69B3E3]/20">
-                        <div class="aspect-w-1 aspect-h-1">
-                            <img src="{{ asset('images/staff/placeholder.jpg') }}" alt="Staff Member" class="w-full h-full object-cover">
-                        </div>
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold text-[#FCFEFD] mb-2 font-['Rajdhani']">STAFF NAME</h3>
-                            <p class="text-[#FFAB3D] font-medium font-['Rajdhani']">POSITION</p>
+                        <!-- Staff Member 4 -->
+                        <div class="bg-[#0A1F40]/90 rounded-lg overflow-hidden transition-transform hover:scale-105 border border-[#69B3E3]/20 shadow-[0_0_15px_rgba(254,230,108,0.3)]">
+                            <div class="aspect-w-1 aspect-h-1">
+                                <img src="{{ asset('images/bellatrix.png') }}" alt="Staff Member" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-[#FCFEFD] mb-2 font-['Rajdhani']">Bellatrix Cyrus</h3>
+                                <p class="text-[#FFAB3D] font-medium font-['Rajdhani']">Head of Entertainment</p>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </section>
+
+                <!-- Management Team Section -->
+                <section class="mb-24 relative z-20">
+                    <h1 class="text-4xl font-bold mb-16 text-[#FEE66C] font-['Orbitron'] relative z-20">
+                        Management Team
+                    </h1>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <!-- Staff Member 5 -->
+                        <div class="bg-[#0A1F40]/90 rounded-lg overflow-hidden transition-transform hover:scale-105 border border-[#69B3E3]/20 shadow-[0_0_15px_rgba(254,230,108,0.3)]">
+                            <div class="aspect-w-1 aspect-h-1">
+                                <img src="{{ asset('images/chavi.png') }}" alt="Staff Member" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-[#FCFEFD] mb-2 font-['Rajdhani']">Chavilla Orvana</h3>
+                                <p class="text-[#FFAB3D] font-medium font-['Rajdhani']">VIOR Eclipse Coach & A2 Instructor</p>
+                            </div>
+                        </div>
+
+                        <!-- Staff Member 6 -->
+                        <div class="bg-[#0A1F40]/90 rounded-lg overflow-hidden transition-transform hover:scale-105 border border-[#69B3E3]/20 shadow-[0_0_15px_rgba(254,230,108,0.3)]">
+                            <div class="aspect-w-1 aspect-h-1">
+                                <img src="{{ asset('images/mimi.png') }}" alt="Staff Member" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-[#FCFEFD] mb-2 font-['Rajdhani']">Mimi Leclair</h3>
+                                <p class="text-[#FFAB3D] font-medium font-['Rajdhani']">VIOR Aphrodite Manager</p>
+                            </div>
+                        </div>
+
+                        <!-- Staff Member 7 -->
+                        <div class="bg-[#0A1F40]/90 rounded-lg overflow-hidden transition-transform hover:scale-105 border border-[#69B3E3]/20 shadow-[0_0_15px_rgba(254,230,108,0.3)]">
+                            <div class="aspect-w-1 aspect-h-1">
+                                <img src="{{ asset('images/shannon.png') }}" alt="Staff Member" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-[#FCFEFD] mb-2 font-['Rajdhani']">Shannon Lee Agatha</h3>
+                                <p class="text-[#FFAB3D] font-medium font-['Rajdhani']">VIOR Eclipse Manager & VOD Analyst</p>
+                            </div>
+                        </div>
+
+                        <!-- Staff Member 8 -->
+                        <div class="bg-[#0A1F40]/90 rounded-lg overflow-hidden transition-transform hover:scale-105 border border-[#69B3E3]/20 shadow-[0_0_15px_rgba(254,230,108,0.3)]">
+                            <div class="aspect-w-1 aspect-h-1">
+                                <img src="{{ asset('images/wisco.png') }}" alt="Staff Member" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-[#FCFEFD] mb-2 font-['Rajdhani']">Wisco Vans</h3>
+                                <p class="text-[#FFAB3D] font-medium font-['Rajdhani']">VIOR Reverie Coach</p>
+                            </div>
+                        </div>
+
+                        <!-- Staff Member 9 -->
+                        <div class="bg-[#0A1F40]/90 rounded-lg overflow-hidden transition-transform hover:scale-105 border border-[#69B3E3]/20 shadow-[0_0_15px_rgba(254,230,108,0.3)]">
+                            <div class="aspect-w-1 aspect-h-1">
+                                <img src="{{ asset('images/rho.png') }}" alt="Staff Member" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-[#FCFEFD] mb-2 font-['Rajdhani']">Rho Kyrios</h3>
+                                <p class="text-[#FFAB3D] font-medium font-['Rajdhani']">VIOR Ignite Coach</p>
+                            </div>
+                        </div>
+
+                        <!-- Staff Member 10 -->
+                        <div class="bg-[#0A1F40]/90 rounded-lg overflow-hidden transition-transform hover:scale-105 border border-[#69B3E3]/20 shadow-[0_0_15px_rgba(254,230,108,0.3)]">
+                            <div class="aspect-w-1 aspect-h-1">
+                                <img src="{{ asset('images/aphrodite/kinachan.png') }}" alt="Staff Member" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-[#FCFEFD] mb-2 font-['Rajdhani']">Kina-chan</h3>
+                                <p class="text-[#FFAB3D] font-medium font-['Rajdhani']">A1 Assistant Instructor</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
 
-        
-        <footer class="bg-[#0F2A55] text-[#FCFEFD] py-12 border-t border-[#69B3E3]/20">
+        <!-- Footer -->
+        <footer class="relative z-10 bg-[#0F2A55]/90 text-[#FCFEFD] py-12 border-t border-[#69B3E3]/20">
             <div class="container mx-auto px-4">
                 <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                     <div>
@@ -162,7 +243,7 @@
                             <li><a href="/" class="text-[#CBCBCB] hover:text-[#FFAB3D]">Home</a></li>
                             <li><a href="/teams" class="text-[#CBCBCB] hover:text-[#FFAB3D]">Teams</a></li>
                             <li><a href="/about" class="text-[#CBCBCB] hover:text-[#FFAB3D]">About</a></li>
-                            <li><a href="#" class="text-[#CBCBCB] hover:text-[#FFAB3D]">Academy</a></li>
+                            <li><a href="/academy" class="text-[#CBCBCB] hover:text-[#FFAB3D]">Academy</a></li>
                             <li><a href="https://www.oristarium.com/" class="text-[#CBCBCB] hover:text-[#FFAB3D]">Entertainment</a></li>
                             <li><a href="/staff" class="text-[#CBCBCB] hover:text-[#FFAB3D]">Staff</a></li>
                         </ul>
@@ -210,9 +291,7 @@
                 </div>
         </footer>
     </div>
-
-<!-- Add this script at the end of the body -->
-<script>
+    <script>
         const body = document.body;
         const mobileMenu = document.getElementById('mobile-menu');
         const pageContent = document.getElementById('page-content');

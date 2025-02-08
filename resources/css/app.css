@@ -383,3 +383,11 @@ body.loading {
         padding: 0 1rem;
     }
 }
+
+/* Add gradient mask support for different browsers */
+@supports (-webkit-mask-image: linear-gradient(to right, transparent, black)) {
+    .mask-gradient {
+        -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+        mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    }
+}
