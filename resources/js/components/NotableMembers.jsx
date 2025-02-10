@@ -6,145 +6,145 @@ const NotableMembers = () => {
         {
             id: 1,
             name: "Azuko Kaede",
-            role: "Duelist",
+            role: "Indie Vtuber",
             position: "Academy Student"
         },
         {
             id: 2,
             name: "Oxxy Sylvester",
-            role: "Duelist",
+            role: "Indie Vtuber",
             position: "Academy Student"
         },
         {
             id: 3,
             name: "Zyrra Alvarez",
-            role: "Sentinel",
+            role: "Indie Vtuber",
             position: "Academy Student"
         },
         {
             id: 4,
             name: "Fafayouw",
-            role: "Initiator",
+            role: "ID Valorant Player",
             position: "Academy Student"
         },
         {
             id: 5,
             name: "Kurayami Reiz",
-            role: "Controller",
+            role: "Indie Vtuber",
             position: "Academy Student"
         },
         {
             id: 6,
             name: "Kirenn Karilya",
-            role: "Initiator",
+            role: "Indie Vtuber",
             position: "Academy Student"
         },
         {
             id: 7,
             name: "Yumekawa Haruki",
-            role: "Duelist",
+            role: "Indie Vtuber",
             position: "Academy Student"
         },
         {
             id: 8,
             name: "Peorinpie",
-            role: "Sentinel",
+            role: "Illustrator & Streamer",
             position: "Academy Student"
         },
         {
             id: 9,
             name: "Kouhei Yamagata",
-            role: "Initiator",
+            role: "Indie Vtuber",
             position: "Academy Student"
         },
         {
             id: 10,
             name: "Tetsuya Voaldigoad",
-            role: "Duelist",
+            role: "Indie Vtuber",
             position: "VIOR Team"
         },
         {
             id: 11,
             name: "Lunafare Avellin",
-            role: "Initiator",
+            role: "ID Valorant Player",
             position: "Academy Student"
         },
         {
             id: 12,
             name: "Yuyogo Elio",
-            role: "Initiator",
+            role: "Indie Vtuber",
             position: "VIOR Team"
         },
         {
             id: 13,
             name: "Oceanne Reid",
-            role: "Controller",
+            role: "Indie Vtuber",
             position: "Academy Student"
         },
         {
             id: 14,
             name: "Axel Zeed",
-            role: "Duelist",
+            role: "Indie Vtuber",
             position: "Academy Student"
         },
         {
             id: 15,
             name: "Elana Clountysia",
-            role: "Initiator",
+            role: "Indie Vtuber",
             position: "Academy Student"
         },
         {
             id: 16,
             name: "Zara Azura",
-            role: "Sentinel",
+            role: "Indie Vtuber",
             position: "Academy Student"
         },
         {
             id: 17,
             name: "StevenS",
-            role: "Duelist",
+            role: "ID Valorant Player",
             position: "Academy Student"
         },
         {
             id: 18,
             name: "Ryoki Nekonial",
-            role: "Sentinel",
+            role: "DIG Vtuber",
             position: "Academy Student"
         },
         {
             id: 19,
             name: "Kisaragi Made",
-            role: "Initiator",
+            role: "Indie Vtuber",
             position: "Academy Student"
         },
         {
             id: 20,
             name: "Ichigatsu Ailurus",
-            role: "Sentinel",
+            role: "MoonEclipse Vtuber",
             position: "Academy Student"
         },
         {
             id: 21,
             name: "Migo Haswell",
-            role: "Duelist",
+            role: "Yorukaze Production Vtuber",
             position: "Academy Student"
         },
         {
             id: 22,
             name: "SwiftyGe",
-            role: "Duelist",
+            role: "Indie Vtuber",
             position: "Academy Student"
         },
         {
             id: 23,
             name: "Nakauji",
-            role: "Initiator",
+            role: "Indie Vtuber",
             position: "Academy Student"
         },
         {
             id: 24,
             name: "Cielaria",
-            role: "Controller",
+            role: "Indie Vtuber",
             position: "VIOR Team"
         }
     ];
