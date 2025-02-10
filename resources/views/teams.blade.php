@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon/favicon.ico') }}">
-    <title>Teams - VIOR Tower</title>
+    <title>Teams</title>
     @viteReactRefresh
     @vite(['resources/css/app.css', 'resources/js/app.jsx'])
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
@@ -289,8 +289,8 @@
         </div>
     </div>
 
-<!-- Add this script at the end of the body -->
-<script>
+    <!-- Add this script at the end of the body -->
+    <script>
         const body = document.body;
         const mobileMenu = document.getElementById('mobile-menu');
         const pageContent = document.getElementById('page-content');

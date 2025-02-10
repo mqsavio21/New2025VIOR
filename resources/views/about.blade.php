@@ -94,10 +94,9 @@
             </div>
         </div>
 
+                    <div id="main-animated-bg-root"></div>
         <!-- Main content -->
         <div class="pt-24 relative overflow-hidden min-h-screen">
-            <!-- Add animated background container -->
-            <div id="main-animated-bg-root"></div>
             
             <!-- Add Axel background image (left) -->
             <div class="fixed left-0 top-24 bottom-0 w-1/3 pointer-events-none z-[1]">
