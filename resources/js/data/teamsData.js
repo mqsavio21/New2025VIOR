@@ -99,18 +99,18 @@ export const teamsData = {
                 ]
             },
             {
-                name: "Jose Kouichi",
-                gameName: "Duelist",
-                description: "An explosive entry fragger whose unpredictable playstyle keeps enemies guessing. Jose's exceptional mechanical skills and creative approach to duels make them a constant threat on both attack and defense.",
-                image: "/images/vernalis/jose.png",
+                name: "HaruMiz",
+                gameName: "Coach",
+                description: "With a keen eye for detail and a deep understanding of the game's mechanics, Haru consistently guides his teams to victory through his meticulous preparation and strategic brilliance.",
+                image: "/images/haru.png",
                 socialLinks: [
                     {
                         icon: "fa-twitter",
-                        url: "https://x.com/josekouichivt"
+                        url: "https://x.com/DokutahIM"
                     },
                     {
                         icon: "fa-youtube",
-                        url: "https://www.youtube.com/@josekouichi"
+                        url: "https://www.youtube.com/@harumizval"
                     }
                 ]
             }
