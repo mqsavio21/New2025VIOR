@@ -138,26 +138,29 @@
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                         <!-- News Card 1 -->
                         <div class="group relative overflow-hidden bg-[#162F5A] shadow-lg h-[400px]">
-                            <div class="h-full">
-                                <img src="/images/news1.png" alt="News" class="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-300">
-                            </div>
-                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#0F2A55] via-[#0F2A55]/80 to-transparent p-6">
-                                <h3 class="text-xl font-bold mt-2 text-[#FCFEFD]">1st Female Player in VIOR Vernalis</h3>
-                                <p class="text-[#CBCBCB] mt-2">January 2025</p>
-                            </div>
+                            <a href="/soranews" class="block h-full">
+                                <div class="h-full">
+                                    <img src="/images/news1.png" alt="News" class="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-300">
+                                </div>
+                                <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#0F2A55] via-[#0F2A55]/80 to-transparent p-6">
+                                    <h3 class="text-xl font-bold mt-2 text-[#FCFEFD]">1st Female Player in VIOR Vernalis</h3>
+                                    <p class="text-[#CBCBCB] mt-2">January 2025</p>
+                                </div>
+                            </a>
                         </div>
 
                         <!-- News Card 2 -->
                         <div class="group relative overflow-hidden bg-[#162F5A] shadow-lg h-[400px]">
-                            <div class="h-full">
-                                <img src="/images/news2.png" alt="News" class="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-300">
-                            </div>
+                            <a href="/ignitenews" class="block h-full">
+                                <div class="h-full">
+                                    <img src="/images/news2.png" alt="News" class="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-300">
+                                </div>
                             <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#0F2A55] via-[#0F2A55]/80 to-transparent p-6">
                                 <h3 class="text-xl font-bold mt-2 text-[#FCFEFD]">New Team: VIOR Ignite</h3>
                                 <p class="text-[#CBCBCB] mt-2">January 2025</p>
                             </div>
+                            </a>
                         </div>
-
                         <!-- News Card 3 -->
                         <div class="group relative overflow-hidden bg-[#162F5A] shadow-lg h-[400px]">
                             <div class="h-full">

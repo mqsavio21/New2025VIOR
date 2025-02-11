@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon/favicon.ico') }}">
-    <title>About Us</title>
+    <title>New VIOR Team: VIOR Ignite</title>
     @viteReactRefresh
     @vite(['resources/css/app.css', 'resources/js/app.jsx'])
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
@@ -97,142 +97,58 @@
         <div id="main-animated-bg-root"></div>
         <!-- Main content -->
         <div class="pt-24 relative overflow-hidden min-h-screen">
-            
-            <!-- Add Axel background image (left) -->
-            <div class="fixed left-0 top-24 bottom-0 w-1/3 pointer-events-none z-[1]">
-                <img 
-                    src="{{ asset('images/axel.png') }}" 
-                    alt="Background Decoration" 
-                    class="h-full w-full object-contain object-left opacity-15"
-                    style="position: absolute; left: 0; top: 0;"
-                >
-            </div>
+            <!-- SoraNews Section -->
+            <div class="container mx-auto px-4 py-12">
+                <div class="max-w-4xl mx-auto bg-[#0F2A55]/50 backdrop-blur-sm border border-[#69B3E3]/20 rounded-lg p-8">
+                    <!-- Article Header -->
+                    <div class="mb-8">
+                        <h1 class="text-4xl font-bold text-[#FEE66C] mb-4 font-['Rajdhani']">Sentinels Secure Spot at VCT Masters Bangkok</h1>
+                        <div class="text-[#CBCBCB] mb-4">Published: July 24, 2023</div>
+                        <div class="w-full h-[2px] bg-gradient-to-r from-[#69B3E3]/40 to-transparent"></div>
+                    </div>
 
-            <!-- Add Kirenn background image (right) -->
-            <div class="fixed right-0 top-24 bottom-0 w-1/3 pointer-events-none z-[1]">
-                <img 
-                    src="{{ asset('images/kirenn.png') }}" 
-                    alt="Background Decoration" 
-                    class="h-full w-full object-contain object-right opacity-15 scale-100 md:scale-100 sm:scale-125"
-                    style="position: absolute; right: -15%; top: 0;"
-                >
-            </div>
-            
-            <!-- About Section -->
-            <div class="container mx-auto px-4 py-16 relative z-10">
-                <!-- Who We Are Section -->
-                <div class="mb-20">
-                    <h2 class="text-5xl md:text-7xl font-bold text-[#FEE66C] mb-8 font-['Orbitron']">WHO WE ARE</h2>
-                    <div class="max-w-4xl">
-                        <p class="text-xl md:text-2xl text-[#CBCBCB] mb-8 font-['Rajdhani']">
-                            VIOR Tower is a non-profit community academy based for Indonesian Valorant players, particularly those who identify as vstreamers or vtubers which founded in October 2023.
+                    <!-- Article Image -->
+                    <div class="mb-8">
+                        <img src="{{ asset('images/news2.png') }}" alt="Sentinels at VCT Masters" class="w-full h-auto rounded-lg shadow-lg">
+                    </div>
+
+                    <!-- Article Content -->
+                    <div class="prose prose-invert max-w-none">
+                        <p class="text-lg text-[#FCFEFD] leading-relaxed mb-6">
+                            In a remarkable display of skill and teamwork, Sentinels have emerged as the second Americas team to qualify for VCT Masters Bangkok. This achievement marks another significant milestone in their competitive journey, securing their position among the elite teams heading to the prestigious tournament.
                         </p>
-                        <p class="text-xl md:text-2xl text-[#CBCBCB] font-['Rajdhani']">
-                        Dedicated to fostering talent, promoting competitive gaming, and creating a community for passionate gamers, we strive to create opportunities for players especially vstreamers and vtubers to grow, compete, and achieve their dreams in the ever-evolving landscape of competitive gaming.
+
+                        <p class="text-lg text-[#FCFEFD] leading-relaxed mb-6">
+                            The qualification came after a series of intense matches, demonstrating the team's resilience and strategic prowess throughout the tournament. Their performance has not only secured their spot but also reinforced their status as one of the strongest contenders in the competitive scene.
                         </p>
-                    </div>
-                </div>
 
-                <!-- Stats Section -->
-                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8 mb-20">
-                    <div class="text-center p-8 bg-[#0A1C3B]/50 backdrop-blur-sm border border-[#69B3E3]/20 rounded-lg">
-                        <div class="text-3xl md:text-5xl font-bold text-[#FEE66C] mb-4 font-['Orbitron']">5</div>
-                        <div class="text-xl text-[#CBCBCB] font-['Rajdhani']">COMPETITIVE TEAMS</div>
-                    </div>
-                    <div class="text-center p-8 bg-[#0A1C3B]/50 backdrop-blur-sm border border-[#69B3E3]/20 rounded-lg">
-                        <div class="text-3xl md:text-5xl font-bold text-[#FEE66C] mb-4 font-['Orbitron']">50+</div>
-                        <div class="text-xl text-[#CBCBCB] font-['Rajdhani']">ACTIVE PLAYERS</div>
-                    </div>
-                    <div class="text-center p-8 bg-[#0A1C3B]/50 backdrop-blur-sm border border-[#69B3E3]/20 rounded-lg">
-                        <div class="text-3xl md:text-5xl font-bold text-[#FEE66C] mb-4 font-['Orbitron']">300K+</div>
-                        <div class="text-xl text-[#CBCBCB] font-['Rajdhani']">COMMUNITY MEMBERS</div>
-                    </div>
-                    <div class="text-center p-8 bg-[#0A1C3B]/50 backdrop-blur-sm border border-[#69B3E3]/20 rounded-lg">
-                        <div class="text-3xl md:text-5xl font-bold text-[#FEE66C] mb-4 font-['Orbitron']">10</div>
-                        <div class="text-xl text-[#CBCBCB] font-['Rajdhani']">ACHIEVEMENTS</div>
-                    </div>
-                    <div class="text-center p-8 bg-[#0A1C3B]/50 backdrop-blur-sm border border-[#69B3E3]/20 rounded-lg">
-                        <div class="text-3xl md:text-5xl font-bold text-[#FEE66C] mb-4 font-['Orbitron']">2023</div>
-                        <div class="text-xl text-[#CBCBCB] font-['Rajdhani']">FOUNDED IN</div>
-                    </div>
-                </div>
-
-                <!-- Mission Section -->
-                <div class="mb-20 flex flex-col md:flex-row items-center gap-12">
-                    
-                    <!-- left side - Text -->
-                    <div class="w-full md:w-1/2">
-                        <h2 class="text-5xl md:text-7xl font-bold text-[#FEE66C] mb-8 font-['Orbitron']">OUR MISSION</h2>
-                        <div class="space-y-6">
-                            <p class="text-xl md:text-2xl text-[#CBCBCB] font-['Rajdhani']">
-                                We want to build a place for empowerment through education, foster a supportive community, promote positive gaming etiquette, and integration of art & gaming.
-                            </p>
-                            <p class="text-xl md:text-2xl text-[#CBCBCB] font-['Rajdhani']">
-                                We are hoping to be a suitable place for nurturing ground in Indonesia for aspiring Valorant players especially for VStreamers, where talent transcends rank and every individual is empowered to unlock their full potential.
+                        <div class="my-8 p-4 bg-[#69B3E3]/10 border-l-4 border-[#69B3E3] rounded">
+                            <p class="text-[#FCFEFD] italic">
+                                "This qualification is a testament to our team's dedication and hard work. We're excited to represent our region at Masters Bangkok and compete against the world's best."
                             </p>
                         </div>
+
+                        <p class="text-lg text-[#FCFEFD] leading-relaxed mb-6">
+                            As the tournament approaches, all eyes will be on Sentinels to see if they can maintain their momentum and make a significant impact at VCT Masters Bangkok. Their qualification adds another exciting chapter to their competitive story and sets the stage for what promises to be an thrilling international showdown.
+                        </p>
                     </div>
-                    <!-- right side - Image -->
-                    <div class="w-full md:w-1/2">
-                        <div class="relative">
-                            <img 
-                                src="{{ asset('images/mission.png') }}" 
-                                alt="Esports Player" 
-                                class="w-full h-[500px] object-cover rounded-lg shadow-[0_0_15px_rgba(254,230,108,0.3)]"
-                            >
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Values Section -->
-                <div>
-                    <h2 class="text-5xl md:text-7xl font-bold text-[#FEE66C] mb-8 font-['Orbitron']">OUR VALUES</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        <div class="p-8 bg-[#0A1C3B]/50 backdrop-blur-sm border border-[#69B3E3]/20 rounded-lg shadow-[0_0_15px_rgba(254,230,108,0.3)] transition-shadow duration-300 hover:shadow-[0_0_20px_rgba(254,230,108,0.5)]">
-                            <h3 class="text-2xl font-bold text-[#FFAB3D] mb-4 font-['Rajdhani']">EXCELLENCE</h3>
-                            <p class="text-[#CBCBCB] font-['Rajdhani']">We strive for excellence in everything we do, from competitive performance to content creation and community engagement.</p>
-                        </div>
-                        <div class="p-8 bg-[#0A1C3B]/50 backdrop-blur-sm border border-[#69B3E3]/20 rounded-lg shadow-[0_0_15px_rgba(254,230,108,0.3)] transition-shadow duration-300 hover:shadow-[0_0_20px_rgba(254,230,108,0.5)]">
-                            <h3 class="text-2xl font-bold text-[#FFAB3D] mb-4 font-['Rajdhani']">INNOVATION</h3>
-                            <p class="text-[#CBCBCB] font-['Rajdhani']">We embrace new ideas and technologies to stay at the forefront of esports evolution and entertainment.</p>
-                        </div>
-                        <div class="p-8 bg-[#0A1C3B]/50 backdrop-blur-sm border border-[#69B3E3]/20 rounded-lg shadow-[0_0_15px_rgba(254,230,108,0.3)] transition-shadow duration-300 hover:shadow-[0_0_20px_rgba(254,230,108,0.5)]">
-                            <h3 class="text-2xl font-bold text-[#FFAB3D] mb-4 font-['Rajdhani']">COMMUNITY</h3>
-                            <p class="text-[#CBCBCB] font-['Rajdhani']">We foster an inclusive and supportive environment where players and fans can connect, grow, and thrive together.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- History Section -->
-                <div class="mt-20">
-                    <h2 class="text-5xl md:text-7xl font-bold text-[#FEE66C] mb-8 font-['Orbitron']">OUR HISTORY</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                        <!-- Column 1: The Beginning -->
-                        <div class="p-8 bg-[#0A1C3B]/50 backdrop-blur-sm border border-[#69B3E3]/20 rounded-lg shadow-[0_0_15px_rgba(254,230,108,0.3)] transition-shadow duration-300 hover:shadow-[0_0_20px_rgba(254,230,108,0.5)]">
-                            <h3 class="text-2xl font-bold text-[#FFAB3D] mb-4 font-['Rajdhani']">THE BEGINNING</h3>
-                            <div class="text-sm text-[#FF4655] mb-2 font-['Rajdhani']">OCTOBER 2023</div>
-                            <p class="text-[#CBCBCB] font-['Rajdhani']">VIOR Tower was established with a vision to create a unique platform for Indonesian VStreamers and VTubers in the VALORANT community, starting with just a handful of dedicated members.</p>
-                        </div>
-
-                        <!-- Column 2: First Steps -->
-                        <div class="p-8 bg-[#0A1C3B]/50 backdrop-blur-sm border border-[#69B3E3]/20 rounded-lg shadow-[0_0_15px_rgba(254,230,108,0.3)] transition-shadow duration-300 hover:shadow-[0_0_20px_rgba(254,230,108,0.5)]">
-                            <h3 class="text-2xl font-bold text-[#FFAB3D] mb-4 font-['Rajdhani']">FIRST STEPS</h3>
-                            <div class="text-sm text-[#FF4655] mb-2 font-['Rajdhani']">NOVEMBER 2023</div>
-                            <p class="text-[#CBCBCB] font-['Rajdhani']">Formation of our first competitive teams and the launch of our community Discord server, marking the beginning of our journey to build a supportive gaming ecosystem in Indonesia Vtubers Communities.</p>
-                        </div>
-
-                        <!-- Column 3: Community Growth -->
-                        <div class="p-8 bg-[#0A1C3B]/50 backdrop-blur-sm border border-[#69B3E3]/20 rounded-lg shadow-[0_0_15px_rgba(254,230,108,0.3)] transition-shadow duration-300 hover:shadow-[0_0_20px_rgba(254,230,108,0.5)]">
-                            <h3 class="text-2xl font-bold text-[#FFAB3D] mb-4 font-['Rajdhani']">COMMUNITY GROWTH</h3>
-                            <div class="text-sm text-[#FF4655] mb-2 font-['Rajdhani']">DECEMBER 2023</div>
-                            <p class="text-[#CBCBCB] font-['Rajdhani']">Rapid expansion of our community to over 300 members, establishing VIOR Tower as a significant presence in the Indonesian Vtuber VALORANT scene.</p>
-                        </div>
-
-                        <!-- Column 4: Looking Forward -->
-                        <div class="p-8 bg-[#0A1C3B]/50 backdrop-blur-sm border border-[#69B3E3]/20 rounded-lg shadow-[0_0_15px_rgba(254,230,108,0.3)] transition-shadow duration-300 hover:shadow-[0_0_20px_rgba(254,230,108,0.5)]">
-                            <h3 class="text-2xl font-bold text-[#FFAB3D] mb-4 font-['Rajdhani']">LOOKING FORWARD</h3>
-                            <div class="text-sm text-[#FF4655] mb-2 font-['Rajdhani']">2024 & BEYOND</div>
-                            <p class="text-[#CBCBCB] font-['Rajdhani']">Continuing to expand our influence in vtuber VALORANT scene while fostering the unique blend of gaming and content creation that defines our community with the new released of our entertainment brand, ORISTARIUM.</p>
+                    <!-- Social Share -->
+                    <div class="mt-8 pt-6 border-t border-[#69B3E3]/20">
+                        <div class="flex items-center space-x-4">
+                            <span class="text-[#CBCBCB]">Share:</span>
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-[#CBCBCB] hover:text-[#FFAB3D]">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="text-[#CBCBCB] hover:text-[#FFAB3D]">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515a.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0a12.64 12.64 0 0 0-.617-1.25a.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057a19.9 19.9 0 0 0 5.993 3.03a.078.078 0 0 0 .084-.028a14.09 14.09 0 0 0 1.226-1.994a.076.076 0 0 0-.041-.106a13.107 13.107 0 0 1-1.872-.892a.077.077 0 0 1-.008-.128a10.2 10.2 0 0 0 .372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127a12.299 12.299 0 0 1-1.873.892a.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028a19.839 19.839 0 0 0 6.002-3.03a.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/>
+                                    </svg>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>

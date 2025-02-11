@@ -39,3 +39,9 @@ Route::get('/staff', function () {
 Route::get('/academy', function () {
     return view('academy');
 });
+Route::get('/soranews', function () {
+    return view('soranews');
+});
+Route::get('/ignitenews', function () {
+    return view('ignitenews');
+});
