@@ -94,37 +94,32 @@
             </div>
         </div>
 
-        <div id="main-animated-bg-root"></div>
-        <!-- Main content -->
         <!-- Main content -->
         <div class="pt-24 relative overflow-hidden min-h-screen">            
             <!-- Hero Section -->
             <div class="relative h-[300px] sm:h-[400px] md:h-[500px] mb-8 md:mb-12">
-                <!-- Top Yellow Line Shadow -->
-                <div class="absolute top-0 left-0 right-0 h-[2px] md:h-[3px] bg-gradient-to-r from-transparent via-[#FEE66C] to-transparent shadow-[0_0_10px_rgba(254,230,108,0.7)] z-10"></div>
-
-                <!-- Left Yellow Line Shadow -->
-                <div class="absolute top-0 bottom-0 left-0 w-[2px] md:w-[3px] bg-gradient-to-b from-transparent via-[#FEE66C] to-transparent shadow-[0_0_10px_rgba(254,230,108,0.7)] z-10"></div>
-
-                <!-- Right Yellow Line Shadow -->
-                <div class="absolute top-0 bottom-0 right-0 w-[2px] md:w-[3px] bg-gradient-to-b from-transparent via-[#FEE66C] to-transparent shadow-[0_0_10px_rgba(254,230,108,0.7)] z-10"></div>
-
                 <!-- Hero Image -->
-                <div class="absolute inset-0">
-                    <img src="{{ asset('images/heroacademy.png') }}" alt="Academy Hero" class="w-full h-full object-cover">
+                <div class="absolute inset-0 z-10">
+                    <img src="{{ asset('images/heroacademy.png') }}" alt="Academy Hero" class="w-full h-full object-cover object-center">
                     <!-- Dark Overlay -->
                     <div class="absolute inset-0 bg-black/70"></div>
                 </div>
+
+                <!-- Yellow Line Shadows - Increased z-index -->
+                <div class="absolute top-0 left-0 right-0 h-[2px] md:h-[3px] bg-gradient-to-r from-transparent via-[#FEE66C] to-transparent shadow-[0_0_15px_rgba(254,230,108,0.7)] z-30"></div>
+                <div class="absolute top-0 bottom-0 left-0 w-[2px] md:w-[3px] bg-gradient-to-b from-transparent via-[#FEE66C] to-transparent shadow-[0_0_15px_rgba(254,230,108,0.7)] z-30"></div>
+                <div class="absolute top-0 bottom-0 right-0 w-[2px] md:w-[3px] bg-gradient-to-b from-transparent via-[#FEE66C] to-transparent shadow-[0_0_15px_rgba(254,230,108,0.7)] z-30"></div>
+                <div class="absolute bottom-0 left-0 right-0 h-[2px] md:h-[3px] bg-gradient-to-r from-transparent via-[#FEE66C] to-transparent shadow-[0_0_15px_rgba(254,230,108,0.7)] z-30"></div>
                 
-                <!-- Hero Content -->
-                <div class="relative h-full flex flex-col items-center justify-center text-center px-4">
+                <!-- Hero Content - Highest z-index -->
+                <div class="relative h-full flex flex-col items-center justify-center text-center px-4 z-40">
                     <img src="{{ asset('images/logo.png') }}" alt="VIOR Tower Logo" class="h-20 sm:h-28 md:h-32 lg:h-48 mb-2 md:mb-4">
                     <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold text-white mb-2 md:mb-4 font-['Orbitron']">VIOR Academy</h1>
                 </div>
-
-                <!-- Bottom Yellow Line Shadow -->
-                <div class="absolute bottom-0 left-0 right-0 h-[2px] md:h-[3px] bg-gradient-to-r from-transparent via-[#FEE66C] to-transparent shadow-[0_0_10px_rgba(254,230,108,0.7)] z-10"></div>
             </div>
+
+            <!-- Animated Background - Lower z-index -->
+            <div id="main-animated-bg-root" class="z-0"></div>
 
             <!-- Who We Are Section -->
             <div class="mb-20 container mx-auto px-4 pt-12">

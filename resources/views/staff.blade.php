@@ -94,9 +94,9 @@
             </div>
         </div>
 
-        <div id="main-animated-bg-root"></div>
         <!-- Main content -->
         <div class="pt-36 relative overflow-hidden min-h-screen">
+        <div id="main-animated-bg-root"></div>
             <!-- Staff Section Container -->
             <div class="container mx-auto px-4">
                 <!-- Board Members Section -->
@@ -220,6 +220,17 @@
                             <div class="p-6">
                                 <h3 class="text-xl font-bold text-[#FCFEFD] mb-2 font-['Rajdhani']">Kina-chan</h3>
                                 <p class="text-[#FFAB3D] font-medium font-['Rajdhani']">A1 Assistant Instructor</p>
+                            </div>
+                        </div>
+
+                        <!-- Staff Member 11 -->
+                        <div class="bg-[#0A1F40]/90 rounded-lg overflow-hidden transition-transform hover:scale-105 border border-[#69B3E3]/20 shadow-[0_0_15px_rgba(254,230,108,0.3)]">
+                            <div class="aspect-w-1 aspect-h-1">
+                                <img src="{{ asset('images/peorinpie.png') }}" alt="Staff Member" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-[#FCFEFD] mb-2 font-['Rajdhani']">Peorinpie</h3>
+                                <p class="text-[#FFAB3D] font-medium font-['Rajdhani']">Graphic Designer</p>
                             </div>
                         </div>
                     </div>
