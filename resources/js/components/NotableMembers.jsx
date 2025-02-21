@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const NotableMembers = () => {
     // Sample data - replace with your actual member data
@@ -65,8 +65,8 @@ const NotableMembers = () => {
         },
         {
             id: 11,
-            name: "Lunafare Avellin",
-            role: "ID Valorant Player",
+            name: "Nesara Scarlett",
+            role: "Indie Vtuber",
             position: "Academy Student"
         },
         {
@@ -138,7 +138,7 @@ const NotableMembers = () => {
         {
             id: 23,
             name: "Nakauji",
-            role: "Indie Vtuber",
+            role: "Indie Vtuber / Yorukaze Studio Rigger",
             position: "Academy Student"
         },
         {
@@ -153,13 +153,29 @@ const NotableMembers = () => {
     const membersPerPage = 8;
     const totalPages = Math.ceil(members.length / membersPerPage);
 
-    const nextPage = () => {
-        setCurrentPage((prev) => (prev + 1) % totalPages);
-    };
+    // Add useEffect to set up event listeners
+    useEffect(() => {
+        const prevButton = document.getElementById('prevPage');
+        const nextButton = document.getElementById('nextPage');
 
-    const prevPage = () => {
-        setCurrentPage((prev) => (prev - 1 + totalPages) % totalPages);
-    };
+        if (prevButton) {
+            prevButton.addEventListener('click', () => {
+                setCurrentPage((prev) => (prev - 1 + totalPages) % totalPages);
+            });
+        }
+
+        if (nextButton) {
+            nextButton.addEventListener('click', () => {
+                setCurrentPage((prev) => (prev + 1) % totalPages);
+            });
+        }
+
+        // Cleanup
+        return () => {
+            prevButton?.removeEventListener('click', () => {});
+            nextButton?.removeEventListener('click', () => {});
+        };
+    }, [totalPages]);
 
     const currentMembers = members.slice(
         currentPage * membersPerPage,
@@ -167,41 +183,33 @@ const NotableMembers = () => {
     );
 
     return (
-        <>
-            <button id="prevPage" onClick={prevPage} className="hidden" />
-            <button id="nextPage" onClick={nextPage} className="hidden" />
-            
-            <div className="container mx-auto px-4 py-12">
-                {/* Section Header */}
-                <div className="text-center mb-16">
-                    <h2 className="text-4xl md:text-5xl font-bold text-[#FEE66C] mb-4 font-['Orbitron']">
-                        Notable Members
-                    </h2>
-                    <p className="text-[#69B3E3] text-lg max-w-2xl mx-auto">
-                        Meet our hardworking members
-                    </p>
-                </div>
-
-                {/* Members Grid */}
-                <div className="relative">
-                    {/* Members Grid */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        {currentMembers.map((member) => (
-                            <div 
-                                key={member.id}
-                                className="bg-[#162F5A] p-6 rounded-xl border border-[#69B3E3]/20 shadow-[0_0_15px_rgba(254,230,108,0.3)]"
-                            >
-                                <h3 className="text-xl font-bold text-[#FEE66C] mb-2 font-['Orbitron']">
-                                    {member.name}
-                                </h3>
-                                <p className="text-[#69B3E3] font-['Rajdhani']">{member.role}</p>
-                                <p className="text-[#CBCBCB] font-['Rajdhani']">{member.position}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
+        <div className="container mx-auto px-4 py-12">
+            {/* Section Header */}
+            <div className="text-center mb-16">
+                <h2 className="text-4xl md:text-5xl font-bold text-[#FEE66C] mb-4 font-['Orbitron']">
+                    Notable Members
+                </h2>
+                <p className="text-[#69B3E3] text-lg max-w-2xl mx-auto">
+                    Meet our hardworking members
+                </p>
             </div>
-        </>
+
+            {/* Members Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                {currentMembers.map((member) => (
+                    <div 
+                        key={member.id}
+                        className="bg-[#162F5A] p-6 rounded-xl border border-[#69B3E3]/20 shadow-[0_0_15px_rgba(254,230,108,0.3)]"
+                    >
+                        <h3 className="text-xl font-bold text-[#FEE66C] mb-2 font-['Orbitron']">
+                            {member.name}
+                        </h3>
+                        <p className="text-[#69B3E3] font-['Rajdhani']">{member.role}</p>
+                        <p className="text-[#CBCBCB] font-['Rajdhani']">{member.position}</p>
+                    </div>
+                ))}
+            </div>
+        </div>
     );
 };
 

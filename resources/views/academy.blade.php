@@ -314,26 +314,29 @@
             <div class="w-full h-[3px] bg-gradient-to-r from-transparent via-[#FEE66C] to-transparent opacity-60 relative z-10"></div>
 
             <!-- Notable Members Section -->
-            <div id="notable-members-root"></div>
+            <div class="relative">
+                <div id="notable-members-root"></div>
 
-            <div class="flex justify-center gap-8 mb-12">
-                <button 
-                    onclick="document.getElementById('prevPage').click()"
-                    class="bg-[#162F5A]/80 p-3 rounded-full text-[#FEE66C] hover:bg-[#FEE66C] hover:text-[#162F5A] transition-all duration-300"
-                >
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-                    </svg>
-                </button>
+                <!-- Navigation Buttons - Positioned with higher z-index -->
+                <div class="relative z-50 flex justify-center gap-8 mb-12 mt-4">
+                    <button 
+                        id="prevPage"
+                        class="bg-[#162F5A]/80 p-3 rounded-full text-[#FEE66C] hover:bg-[#FEE66C] hover:text-[#162F5A] transition-all duration-300 backdrop-blur-sm border border-[#69B3E3]/20 hover:shadow-[0_0_15px_rgba(254,230,108,0.3)]"
+                    >
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                        </svg>
+                    </button>
 
-                <button 
-                    onclick="document.getElementById('nextPage').click()"
-                    class="bg-[#162F5A]/80 p-3 rounded-full text-[#FEE66C] hover:bg-[#FEE66C] hover:text-[#162F5A] transition-all duration-300"
-                >
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                    </svg>
-                </button>
+                    <button 
+                        id="nextPage"
+                        class="bg-[#162F5A]/80 p-3 rounded-full text-[#FEE66C] hover:bg-[#FEE66C] hover:text-[#162F5A] transition-all duration-300 backdrop-blur-sm border border-[#69B3E3]/20 hover:shadow-[0_0_15px_rgba(254,230,108,0.3)]"
+                    >
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </button>
+                </div>
             </div>
 
             <!-- Add this more prominent divider -->
