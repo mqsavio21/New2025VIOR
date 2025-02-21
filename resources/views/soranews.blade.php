@@ -94,16 +94,16 @@
             </div>
         </div>
 
-        <div id="main-animated-bg-root"></div>
         <!-- Main content -->
         <div class="pt-24 relative overflow-hidden min-h-screen">
+        <div id="main-animated-bg-root"></div>
             <!-- SoraNews Section -->
             <div class="container mx-auto px-4 py-12">
                 <div class="max-w-4xl mx-auto bg-[#0F2A55]/50 backdrop-blur-sm border border-[#69B3E3]/20 rounded-lg p-8">
                     <!-- Article Header -->
                     <div class="mb-8">
-                        <h1 class="text-4xl font-bold text-[#FEE66C] mb-4 font-['Rajdhani']">Sentinels Secure Spot at VCT Masters Bangkok</h1>
-                        <div class="text-[#CBCBCB] mb-4">Published: July 24, 2023</div>
+                        <h1 class="text-4xl font-bold text-[#FEE66C] mb-4 font-['Rajdhani']">A Familiar Face in a New Chapter: Sora Haneul Transfers to VIOR Vernalis!</h1>
+                        <div class="text-[#CBCBCB] mb-4">Published: February 21, 2025</div>
                         <div class="w-full h-[2px] bg-gradient-to-r from-[#69B3E3]/40 to-transparent"></div>
                     </div>
 
@@ -115,40 +115,33 @@
                     <!-- Article Content -->
                     <div class="prose prose-invert max-w-none">
                         <p class="text-lg text-[#FCFEFD] leading-relaxed mb-6">
-                            In a remarkable display of skill and teamwork, Sentinels have emerged as the second Americas team to qualify for VCT Masters Bangkok. This achievement marks another significant milestone in their competitive journey, securing their position among the elite teams heading to the prestigious tournament.
-                        </p>
-
-                        <p class="text-lg text-[#FCFEFD] leading-relaxed mb-6">
-                            The qualification came after a series of intense matches, demonstrating the team's resilience and strategic prowess throughout the tournament. Their performance has not only secured their spot but also reinforced their status as one of the strongest contenders in the competitive scene.
+                            Sora Haneul has officially joined the VIOR Vernalis VALORANT team, marking an exciting new chapter in her competitive journey. Previously recognized as one of the most dedicated Duelists for VIOR Aphrodite, she established herself as a skilled and committed player. This transfer reflects her desire to step out of her comfort zone, further refine her abilities, and embrace new challenges in a fresh team environment.
                         </p>
 
                         <div class="my-8 p-4 bg-[#69B3E3]/10 border-l-4 border-[#69B3E3] rounded">
                             <p class="text-[#FCFEFD] italic">
-                                "This qualification is a testament to our team's dedication and hard work. We're excited to represent our region at Masters Bangkok and compete against the world's best."
+                                "I was shocked when I found out that I was transferred to VIOR Vernalis; I didn't expect that the leap would be that far," said Sora.
                             </p>
                         </div>
 
                         <p class="text-lg text-[#FCFEFD] leading-relaxed mb-6">
-                            As the tournament approaches, all eyes will be on Sentinels to see if they can maintain their momentum and make a significant impact at VCT Masters Bangkok. Their qualification adds another exciting chapter to their competitive story and sets the stage for what promises to be an thrilling international showdown.
+                            Sora Haneul has been a part of VIOR Tower since 2024, contributing to memorable matches and helping VIOR Aphrodite in several Premier events. Known for her sharp reflexes and intelligent game sense, she expected to bring the same passion and high-level performance to her new squad.
+                        </p>
+
+                        <p class="text-lg text-[#FCFEFD] leading-relaxed mb-6">
+                            With Sora joining the roster, excitement is building around her debut with the team. Everyone eagerly awaits what this fresh chapter will bring, and all eyes will be on her first performance with VIOR Vernalis. The community is excited to see how she will help elevate the squad to new heights.
+                        </p>
+
+                        <p class="text-lg text-[#FCFEFD] leading-relaxed mb-6">
+                            As the new season approaches, Sora's arrival has given the team a fresh wave of energy and optimism, with many expecting her to make a new impact. This move symbolizes not just her personal growth, but the continued evolution of VIOR Vernalis as a top contender in the community.
                         </p>
                     </div>
 
-                    <!-- Social Share -->
+                    <!-- Author Attribution -->
                     <div class="mt-8 pt-6 border-t border-[#69B3E3]/20">
                         <div class="flex items-center space-x-4">
-                            <span class="text-[#CBCBCB]">Share:</span>
-                            <div class="flex space-x-4">
-                                <a href="#" class="text-[#CBCBCB] hover:text-[#FFAB3D]">
-                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-                                    </svg>
-                                </a>
-                                <a href="#" class="text-[#CBCBCB] hover:text-[#FFAB3D]">
-                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                        <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515a.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0a12.64 12.64 0 0 0-.617-1.25a.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057a19.9 19.9 0 0 0 5.993 3.03a.078.078 0 0 0 .084-.028a14.09 14.09 0 0 0 1.226-1.994a.076.076 0 0 0-.041-.106a13.107 13.107 0 0 1-1.872-.892a.077.077 0 0 1-.008-.128a10.2 10.2 0 0 0 .372-.292a.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127a12.299 12.299 0 0 1-1.873.892a.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028a19.839 19.839 0 0 0 6.002-3.03a.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/>
-                                    </svg>
-                                </a>
-                            </div>
+                            <span class="text-[#CBCBCB]">Written by:</span>
+                            <span class="text-[#FCFEFD]">Kashmira Aliana Gunawan</span>
                         </div>
                     </div>
                 </div>
